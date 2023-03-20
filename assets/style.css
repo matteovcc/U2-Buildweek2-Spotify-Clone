@@ -15,3 +15,23 @@ svg {
 #play svg {
   fill: black;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #535353;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+footer {
+  background-color: #535353;
+}
