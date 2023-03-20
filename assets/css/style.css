@@ -1,0 +1,11 @@
+svg {
+  fill: white;
+}
+
+#play {
+  background: white;
+}
+
+#play svg {
+  fill: black;
+}

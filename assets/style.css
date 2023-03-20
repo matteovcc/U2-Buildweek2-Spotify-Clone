@@ -1,5 +1,17 @@
-#main-container{
-    background-color: #535353;
-
+#main-container {
+  background-color: #535353;
+  max-height: 90vh;
+  overflow: auto;
 }
 
+svg {
+  fill: white;
+}
+
+#play {
+  background: white;
+}
+
+#play svg {
+  fill: black;
+}
