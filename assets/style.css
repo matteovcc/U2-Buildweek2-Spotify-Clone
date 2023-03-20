@@ -8,6 +8,10 @@ svg {
   fill: white;
 }
 
+svg:hover {
+  fill: green;
+}
+
 #play {
   background: white;
 }
