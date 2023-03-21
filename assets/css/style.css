@@ -49,7 +49,7 @@ footer {
   list-style-type: none;
 }
 
-#popularArtistSongs ol li { display: block}
+#popularArtistSongs ol li { display: flex;}
 
 #popularArtistSongs ol li:before { 
   content: counter(item) "  "; 
