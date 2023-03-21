@@ -33,48 +33,82 @@
     </header>
     <main class="d-flex flex-column align-items-center">
       <div>
-        <p class="mt-5 fw-bold">Per continuare, accedi a Spotify.</p>
+        <p class="mt-5 mb-1 fw-bold">Per continuare, accedi a Spotify.</p>
       </div>
       <div>
         <ul class="list-unstyled">
           <li>
             <button class="login bg-transparent border-0">
-              <div class="d-flex justify-content-center gap-2 bg-primary text-light py-3 px-5 rounded-5">
-                <svg
-                  role="img"
-                  height="24"
-                  width="24"
-                  aria-hidden="true"
-                  class="Svg-sc-ytk21e-0 uPxdw sc-ilhmMj hvGJMA"
-                  viewBox="0 0 24 24"
-                  data-encore-id="icon"
-                >
-                  <path
-                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.093 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.563V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                  ></path>
-                </svg>
-                <p class="m-0 fw-bold">CONTINUA CON FACEBOOK</p>
+              <div
+                class="d-flex justify-content-center align-items-center gap-2 bg-primary text-light py-3 px-5 rounded-5"
+              >
+                <i class="bi bi-facebook fs-5 me-1"></i>
+                <p class="spacing m-0 fw-bold">CONTINUA CON FACEBOOK</p>
               </div>
             </button>
           </li>
           <li>
             <button class="login bg-transparent border-0 mt-2">
-              <div class="d-flex justify-content-center gap-2 bg-dark text-light py-3 px-5 rounded-5">
-                <i class="bi bi-apple"></i>
-                <p class="m-0 fw-bold">CONTINUA CON APPLE</p>
+              <div
+                class="d-flex justify-content-center align-items-center gap-2 bg-dark text-light py-3 px-5 rounded-5"
+              >
+                <i class="bi bi-apple fs-5 me-1"></i>
+                <p class="spacing m-0 fw-bold">CONTINUA CON APPLE</p>
               </div>
             </button>
           </li>
           <li>
             <button class="login bg-transparent border-0 mt-2">
-              <div class="d-flex justify-content-center gap-2 bg-dark text-light py-3 px-5 rounded-5">
-                <i class="bi bi-apple"></i>
-                <p class="m-0 fw-bold">CONTINUA CON GOOGLE</p>
+              <div
+                class="d-flex justify-content-center gap-2 text-secondary py-3 px-5 rounded-5 border border-secondary"
+              >
+                <span id="google"></span>
+                <p class="spacing m-0 fw-bold">CONTINUA CON GOOGLE</p>
               </div>
             </button>
           </li>
-          <li></li>
+          <div class="d-flex justify-content-center align-items-center mt-2">
+            <hr id="spacer1" class="spacers text-body me-3" />
+            <span class="fs-6 fw-bold"><i class="bi bi-circle"></i></span>
+            <hr id="spacer2" class="text-body ms-3" />
+          </div>
         </ul>
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label fw-bold">Indirizzo e-mail o nome utente</label>
+            <input type="email" class="form-control" placeholder="Indirizzo e-mail o nome utente" />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label fw-bold">Password</label>
+            <div class="d-flex">
+              <input type="password" class="form-control" placeholder="Password" />
+              <button class="btn" type="button" id="togglePassword">
+                <i class="bi bi-eye-slash"></i>
+              </button>
+            </div>
+            <div id="passwordHelp" class="form-text">
+              <a class="text-body" href="#">Hai dimenticato la password?</a>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+              <label class="form-check-label" for="exampleCheck1">Ricordami</label>
+            </div>
+            <button type="submit" id="accedi" class="btn rounded-5 px-4 py-2 text-body">ACCEDI</button>
+          </div>
+        </form>
+        <hr />
+      </div>
+      <div class="d-flex flex-column align-items-center mt-3">
+        <p class="text-body fw-bold fs-5">Non hai un account?</p>
+        <button class="login bg-transparent border-0 mt-2">
+          <div
+            class="hover d-flex justify-content-center gap-2 text-secondary py-3 px-5 rounded-5 border border-secondary"
+          >
+            <p class="spacing m-0 fw-bold">ISCRIVITI A SPOTIFY</p>
+          </div>
+        </button>
       </div>
     </main>
     <script
