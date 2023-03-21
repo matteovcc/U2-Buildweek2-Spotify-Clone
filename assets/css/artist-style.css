@@ -1,11 +1,21 @@
 #main-container {
-  background-color: #535353;
+  background: rgb(24, 21, 21);
+  background: linear-gradient(0deg, rgb(32, 28, 28) 40%, rgb(206, 180, 67) 82%);
   max-height: 90vh;
   overflow: auto;
 }
 
+#album-img {
+  width: 200px;
+  height: 200px;
+}
+
 svg {
   fill: white;
+}
+
+#play svg {
+  fill: black;
 }
 
 svg:hover {
@@ -16,8 +26,8 @@ svg:hover {
   background: white;
 }
 
-#play svg {
-  fill: black;
+a {
+  text-decoration: none;
 }
 
 ::-webkit-scrollbar {
@@ -54,6 +64,78 @@ footer {
 #popularArtistSongs ol li:before { 
   content: counter(item) "  "; 
   counter-increment: item;
+}
+
+@media screen and (max-width: 767px) {
+  #friends,
+  #comments,
+  #moreSongs,
+  #user-playlists,
+  #three-dots,
+  #icon,
+  #containerRight,
+  #next,
+  #previous,
+  #repeat,
+  #another-svg,
+  #shuffle,
+  #playbackBar .playback-bar,
+  #playback-progressbar,
+  input,
+  #time {
+    display: none;
+  }
+
+  #song-img {
+    width: 50px;
+  }
+  #container-navbar {
+    position: fixed;
+    bottom: 0;
+    padding: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  }
+  #player {
+    position: fixed;
+    width: 96%;
+    margin-inline: 10px;
+    bottom: 93px;
+    justify-content: space-between;
+  }
+
+  #navbar-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  #mobile-navbar {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #navbar-menu li {
+    margin-right: 22px;
+    flex-direction: column;
+  }
+
+  #navbar-menu svg {
+    margin-right: 12px;
+  }
+
+  #play {
+    background: none;
+  }
+
+  #play svg {
+    fill: white;
+    scale: 1.2;
+  }
+
+  #heart-svg svg {
+    scale: 1.2;
+  }
 }
 
 
