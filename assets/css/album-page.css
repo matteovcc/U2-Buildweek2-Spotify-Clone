@@ -113,7 +113,7 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
-   #friends, #comments,#user-playlists {
+   #friends, #comments,#user-playlists,#three-dots {
     display: none;
 }
 #container-navbar{
@@ -121,8 +121,18 @@ footer {
   bottom:0;
   
 }
-footer{
-  bottom:250px;
+#footer{
+    bottom:190px;
 }
+#navbar-menu{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+/* #navbar-menu li{
+    justify-content:space-evenly;
+} */
+
 
 }
