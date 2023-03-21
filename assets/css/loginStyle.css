@@ -104,3 +104,28 @@ body {
 .spacing {
   letter-spacing: 1px;
 }
+
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 12px;
+  }
+
+  form {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .login {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+  #spacer1,
+  #spacer2 {
+    display: none;
+  }
+
+  #accedi {
+    width: 50%;
+  }
+}
