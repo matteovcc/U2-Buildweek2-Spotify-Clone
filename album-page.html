@@ -795,14 +795,19 @@
       </div>
     </div>
     <footer class="position-fixed bottom-md-0 w-100 border-top border-light" id="footer">
-      <div id="player" class="row align-items-center bg-dark px-4 py-2">
-        <div id="containerLeft" class="col-6 col-md-4 d-flex flex-row align-items-center">
-          <div>
-            <a class="pe-3" href=""><img id="song-img" width="85px" src="assets/images/avatar.png" alt="" /></a>
-          </div>
-          <div class="d-flex flex-column">
-            <a class="text-decoration-none text-light" href="">Come As You Are</a>
-            <a class="text-decoration-none text-light" href=""> Nirvana </a>
+      <div id="player" class="row align-items-center bg-dark px-4 py-2 rounded-3 rounded-sm-0">
+        <div
+          id="containerLeft"
+          class="col-11 col-md-4 d-flex flex-row align-items-center justify-content-between justify-content-md-start"
+        >
+          <div class="d-flex align-items-center">
+            <div>
+              <a class="pe-3" href=""><img id="song-img" width="85px" src="assets/images/avatar.png" alt="" /></a>
+            </div>
+            <div class="d-flex flex-column">
+              <a class="text-decoration-none text-light" href="">Come As You Are</a>
+              <a class="text-decoration-none text-light" href=""> Nirvana </a>
+            </div>
           </div>
           <div class="text-light" id="heart-svg">
             <button class="ms-3 me-1 btn bg-transparent text-light fs-3 svg">
@@ -833,7 +838,10 @@
           </div>
         </div>
 
-        <div id="containerMiddle" class="col-6 col-md-4 text-light d-flex flex-column align-items-center gap-2">
+        <div
+          id="containerMiddle"
+          class="col-1 col-md-4 text-light d-flex flex-column align-items-end align-items-md-center gap-md-2"
+        >
           <div id="playerControls" class="d-flex justify-content-center gap-2">
             <button id="shuffle" class="btn bg-transparent text-light">
               <svg
@@ -928,7 +936,7 @@
           </div>
         </div>
 
-        <div id="containerRight" class="col-4 d-flex justify-content-end">
+        <div id="containerRight" class="col-4 d-none d-md-flex justify-content-end">
           <button class="btn bg-transparent text-light" id="mic">
             <svg
               role="img"

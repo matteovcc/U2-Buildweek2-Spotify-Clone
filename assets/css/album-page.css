@@ -134,18 +134,12 @@ footer {
   #user-playlists,
   #three-dots,
   #icon,
-  #volume-bar,
-  #volume-icon,
   #containerRight,
   #next,
   #previous,
   #repeat,
-  #heart-svg,
   #another-svg,
   #shuffle,
-  #speakers,
-  #mic,
-  #ddg,
   #playbackBar .playback-bar,
   #playback-progressbar,
   input,
@@ -167,6 +161,7 @@ footer {
     width: 96%;
     margin-inline: 10px;
     bottom: 93px;
+    justify-content: space-between;
   }
 
   #navbar-menu {
@@ -188,5 +183,14 @@ footer {
 
   #navbar-menu svg {
     margin-right: 12px;
+  }
+
+  #play {
+    background: none;
+  }
+
+  #play svg {
+    fill: white;
+    scale: 1.2;
   }
 }
