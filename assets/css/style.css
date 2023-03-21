@@ -21,15 +21,15 @@ svg:hover {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #535353;
+  background: black;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: black;
+  background: #535353;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -39,3 +39,13 @@ svg:hover {
 footer {
   background-color: #535353;
 }
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  }
