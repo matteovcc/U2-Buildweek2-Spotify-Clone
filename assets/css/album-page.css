@@ -84,8 +84,16 @@ svg {
   fill: white;
 }
 
+#play svg {
+  fill: black;
+}
+
 svg:hover {
   fill: green;
+}
+
+#play {
+  background: white;
 }
 
 a {
