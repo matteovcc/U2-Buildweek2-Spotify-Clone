@@ -193,4 +193,8 @@ footer {
     fill: white;
     scale: 1.2;
   }
+
+  #heart-svg svg {
+    scale: 1.2;
+  }
 }
