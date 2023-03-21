@@ -39,3 +39,12 @@ svg:hover {
 footer {
   background-color: #535353;
 }
+
+#logoSpotify {
+  fill: black;
+  width: 140px;
+}
+
+.login {
+  width: 450px;
+}
