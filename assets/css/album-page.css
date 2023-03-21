@@ -79,6 +79,15 @@ body {
   width: 200px;
   height: 200px;
 }
+
+svg {
+  fill: white;
+}
+
+svg:hover {
+  fill: green;
+}
+
 a {
   text-decoration: none;
 }
@@ -129,14 +138,14 @@ footer {
   #speakers,
   #mic,
   #ddg,
-  #playbackBar .playback-bar,#playback-progressbar,input,
-  #time{
+  #playbackBar .playback-bar,
+  #playback-progressbar,
+  input,
+  #time {
     display: none;
   }
 
- 
-
-  #song-img{
+  #song-img {
     width: 50px;
   }
   #container-navbar {
