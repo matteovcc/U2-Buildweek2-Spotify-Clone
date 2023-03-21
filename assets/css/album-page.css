@@ -166,4 +166,9 @@ footer {
   #heart-svg svg {
     scale: 1.2;
   }
+
+  #album-img {
+    width: 300px;
+    height: 300px;
+  }
 }
