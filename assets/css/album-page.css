@@ -125,8 +125,11 @@ footer {
     padding: 0;
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
   }
-  #footer {
-    bottom: 95px;
+  #player {
+    position: fixed;
+    max-width: 96%;
+    margin-inline: 10px;
+    bottom: 93px;
   }
 
   #navbar-menu {
