@@ -348,123 +348,113 @@
               </div>
 
                 <div class="container-fluid mt-5">
-                    <div class="row g-1">
-                        <div class="col-12">
-                            <h3 class="text-white text-left">Buonasera</h3>
+                    <div class="row align-items-center">
+                        <div class="col-1">
+                          <button data-testid="play-button" aria-label="Play" data-encore-id="buttonPrimary" class="Button-sc-qlcn5g-0 eHhJDl btn btn-success rounded-circle">
+                            <span class="ButtonInner-sc-14ud5tc-0 dpREpp encore-bright-accent-set"><span aria-hidden="true" class="IconWrapper__Wrapper-sc-1hf1hjl-0 fSnHJ"><svg role="img" height="28" width="28" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 uPxdw"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></span></span></button>
                         </div>
-                        
-                        <div class="col-4 bg-dark rounded ps-0">
-                            <div class="card d-flex flex-row border-0" style="width: 3rem;">
-                                <img src="randomimage.jpg"class="card-img-top" width="" alt="...">
-                                <div class="card-body">
-                                  <p class="card-text text-white flex-end">Playlist</p>
-                                </div>
-                              </div>
-                            </div>
-                        <div class="col-4 bg-dark rounded ps-0 -">
-                            <div class="card d-flex flex-row border-0" style="width: 3rem;">
-                                <img src="randomimage.jpg" class="card-img-top" width="" alt="...">
-                                <div class="card-body">
-                                  <p class="card-text text-white">Playlist</p>
-                                </div>
-                              </div>
-                        </div>
-                        <div class="col-4 bg-dark rounded ps-0 me-">
-                            <div class="card d-flex flex-row border-0 " style="width: 3rem;">
-                                <img src="randomimage.jpg" class="card-img-top" width="" alt="...">
-                                <div class="card-body">
-                                    <p class="card-text text-white">Playlist</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4 bg-dark rounded ps-0 me-">
-                            <div class="card d-flex flex-row border-0 " style="width: 3rem;">
-                                <img src="randomimage.jpg" class="card-img-top" width="" alt="...">
-                                <div class="card-body">
-                                    <p class="card-text text-white">Playlist</p>
-                                </div>
-                              </div>
-                            </div>
-                        <div class="col-4 bg-dark rounded ps-0 me-">
-                            <div class="card d-flex flex-row border-0 " style="width: 3rem;">
-                                <img src="randomimage.jpg" class="card-img-top" width="" alt="...">
-                                <div class="card-body">
-                                    <p class="card-text text-white">Playlist</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4 bg-dark rounded ps-0 me-">
-                            <div class="card d-flex flex-row border-0" style="width: 3rem;">
-                                <img src="randomimage.jpg" class="card-img-top" width="" alt="...">
-                                <div class="card-body">
-                                    <p class="card-text text-white">Playlist</p>
-                                </div>
-                              </div>
-                        </div>
-                        
-                        
-                        
-                    </div>
-                        
-                        
-                            
-                        
-                    </div>
+                        <div class="col-1 d-flex">
+                          <button type="button" class="btn btn-outline-light">FOLLOWING</button>
+                          <a href="#" class="ms-3 pt-1">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="white"
+                              class="bi bi-three-dots"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
+                              />
+                            </svg>
+                          </a>
+                        </div>                     
+                    </div>                       
+                </div>
 
 
 
                    <div class="container-fluid mt-5">
-                    <div class="row g-1">
-                        <div class="col-12 d-flex justify-content-between">
-                            <h3 class="text-white">Altro ciò che ti piace</h3>
-                            <a href="#" style="text-decoration: none;"><p class="text-secondary fw-semibold">VISUALIZZA TUTTO</p></a>
-                        </div>
-                        <div class="col-2 me-4">
-                            <div class="card bg-dark p-1" style="width:10rem;min-height:280px; max-height: 280px;">
-                                <img src="randomimage.jpg" class="card-img-top" height="150px" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title text-white fs-6">Hot Hits Italia</h5>
-                                  <p class="card-text text-secondary">La playlist più calda del momento</p>
+                    <div class="row">
+                        <div id="popularArtistSongs"class="col-7">
+                            <h3 class="text-light">Popolari</h3>
+                            <ol class="text-light fw-bold">
+                              <li>
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <div class="d-flex">
+                                   <img src="./assets/imgs/main/image-12.jpg" class="mx-3" alt="artistTrack" width="35" height="35">
+                                   <h5>Ocean Avenue</h5> 
+                                  </div>
+                                  <div>
+                                    <p>287.350.179</p>
+                                  </div>
+                                  <div>
+                                    <p>3:18</p>
+                                  </div>
                                 </div>
-                              </div>
-                        </div>
-                        <div class="col-2 me-4">
-                            <div class="card bg-dark p-1 carte " style="width:10rem;min-height:280px;max-height: 280px;">
-                                <img src="randomimage.jpg" class="card-img-top" height="150px" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title text-white fs-6">big on the internet</h5>
-                                  <p class="card-text text-secondary">iykyk</p>
+                              </li>
+                              <li>
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <div class="d-flex">
+                                   <img src="./assets/imgs/main/image-12.jpg" class="mx-3" alt="artistTrack" width="35" height="35">
+                                   <h5>Ocean Avenue</h5> 
+                                  </div>
+                                  <div>
+                                    <p>287.350.179</p>
+                                  </div>
+                                  <div>
+                                    <p>3:18</p>
+                                  </div>
                                 </div>
-                              </div>
-                        </div>
-                        <div class="col-2 me-4">
-                            <div class="card bg-dark p-1" style="width:10rem ;min-height:280px;max-height: 280px;">
-                                <img src="randomimage.jpg" class="card-img-top" height="150px" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title text-white fs-6">Pop Rising</h5>
-                                  <p class="card-text text-secondary">The hits of tomorrow are on fire</p>
+                              </li>
+                              <li>
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <div class="d-flex">
+                                   <img src="./assets/imgs/main/image-12.jpg" class="mx-3" alt="artistTrack" width="35" height="35">
+                                   <h5>Ocean Avenue</h5> 
+                                  </div>
+                                  <div>
+                                    <p>287.350.179</p>
+                                  </div>
+                                  <div>
+                                    <p>3:18</p>
+                                  </div>
                                 </div>
-                              </div>
-                        </div>
-                        <div class="col-2 me-4">
-                            <div class="card bg-dark p-1" style="width:10rem ;min-height:280px;max-height: 280px;">
-                                <img src="randomimage.jpg" class="card-img-top" height="150px" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title text-white fs-6">Canzoni tristi</h5>
-                                  <p class="card-text text-secondary">it's ok not to be ok</p>
+                              </li>
+                              <li>
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <div class="d-flex">
+                                   <img src="./assets/imgs/main/image-12.jpg" class="mx-3" alt="artistTrack" width="35" height="35">
+                                   <h5>Ocean Avenue</h5> 
+                                  </div>
+                                  <div>
+                                    <p>287.350.179</p>
+                                  </div>
+                                  <div>
+                                    <p>3:18</p>
+                                  </div>
                                 </div>
-                              </div>
-                        </div>
-                        <div class="col-2">
-                            <div class="card bg-dark p-1 " style="width:10rem ;min-height:280px;max-height: 280px;">
-                                <img src="randomimage.jpg" class="card-img-top" height="150px" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title text-white fs-6">Tendenze</h5>
-                                  <p class="card-text text-secondary">Viral</p>
+                              </li>
+                              <li>
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <div class="d-flex">
+                                   <img src="./assets/imgs/main/image-12.jpg" class="mx-3" alt="artistTrack" width="35" height="35">
+                                   <h5>Ocean Avenue</h5> 
+                                  </div>
+                                  <div>
+                                    <p>287.350.179</p>
+                                  </div>
+                                  <div>
+                                    <p>3:18</p>
+                                  </div>
                                 </div>
-                              </div>
+                              </li>
+                            </ol>
                         </div>
-                        
+                        <div class="col-5">
+                          <h3 class="text-light">Brani che ti piacciono</h3>    
+                        </div>   
                     </div>
 
                    </div>

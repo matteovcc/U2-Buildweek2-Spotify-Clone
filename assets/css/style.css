@@ -43,3 +43,15 @@ footer {
 #artistPage{
   background-image: url("../imgs/543670.jpg");
 }
+
+#popularArtistSongs ol { 
+  counter-reset: item;
+  list-style-type: none;
+}
+
+#popularArtistSongs ol li { display: block}
+
+#popularArtistSongs ol li:before { 
+  content: counter(item) "  "; 
+  counter-increment: item;
+}
