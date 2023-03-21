@@ -116,8 +116,28 @@ footer {
   #comments,
   #user-playlists,
   #three-dots,
-  #icon {
+  #icon,
+  #volume-bar,
+  #volume-icon,
+  #containerRight,
+  #next,
+  #previous,
+  #repeat,
+  #heart-svg,
+  #another-svg,
+  #shuffle,
+  #speakers,
+  #mic,
+  #ddg,
+  #playbackBar .playback-bar,#playback-progressbar,input,
+  #time{
     display: none;
+  }
+
+ 
+
+  #song-img{
+    width: 50px;
   }
   #container-navbar {
     position: fixed;
@@ -127,7 +147,7 @@ footer {
   }
   #player {
     position: fixed;
-    max-width: 96%;
+    width: 96%;
     margin-inline: 10px;
     bottom: 93px;
   }
