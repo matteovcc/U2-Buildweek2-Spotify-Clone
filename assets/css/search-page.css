@@ -44,17 +44,18 @@ body {
   height: 120px;
 }
 
-.col-6 {
+.col-5 {
   position: relative;
+  overflow: hidden;
 }
+
 #genre img {
   width: 80px;
-  transform: rotate(30deg);
+  transform: rotate(25deg);
   border-radius: 10px;
   position: absolute;
   bottom: 0;
-  right: -18px;
-  overflow: hidden;
+  right: -15px;
 }
 
 #main-container {
