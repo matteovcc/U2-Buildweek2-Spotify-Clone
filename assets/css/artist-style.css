@@ -55,15 +55,7 @@ footer {
 }
 
 #popularArtistSongs ol { 
-  counter-reset: item;
   list-style-type: none;
-}
-
-#popularArtistSongs ol li { display: flex;}
-
-#popularArtistSongs ol li:before { 
-  content: counter(item) "  "; 
-  counter-increment: item;
 }
 
 @media screen and (max-width: 767px) {
