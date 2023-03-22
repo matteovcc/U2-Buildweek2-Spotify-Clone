@@ -7,17 +7,18 @@
     <title>Spotify - Homepage</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/artist-style.css">
   </head>
 </head>
-<body>
+<body class="bg-dark">
     <div class="container-fluid" >
         <div class="row">
-          <div class="col-12 col-md-3 bg-dark" id="container-navbar">
-            <!--navbar-->
-            <nav class="navbar navbar-expand-lg bg-body-dark">
-              <div class="container-fluid  flex-column ps-md-0 bg-transparent">
-                <div id="navbar" class="container-fluid flex-column ps-0">
+          <!--navbar-->
+          <div class="col-12 col-xl-3" id="container-navbar">
+            
+            <nav class="navbar navbar-expand-lg bg-transparent">
+              <div class="container-fluid flex-column ps-xl-0 bg-transparent">
+                <div id="navbar" class="container-fluid flex-column bg-transparent ps-0">
                   <a class="navbar-brand" href="#" id="three-dots">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -46,11 +47,11 @@
                     <span class="navbar-toggler-icon" id="icon"></span>
                   </button>
                   <div
-                    class="collapse navbar-collapse d-flex flex-column"
+                    class="collapse navbar-collapse d-flex flex-column bg-transparent"
                     id="navbarNavDropdown"
                   >
                     <div class="container-fluid d-flex" id="mobile-navbar">
-                      <ul class="navbar-nav mt-3 flex-md-column" id="navbar-menu">
+                      <ul class="navbar-nav mt-3 flex-xl-column bg-transparent" id="navbar-menu">
                         <li class="nav-item d-flex align-items-center">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -315,8 +316,11 @@
               </div>
             </div>
           </div>
-            <div class="col-12 col-md-7 p-3" id="main-container">
-                <div class="d-flex justify-content-between align-items-center">
+
+
+            <div class="col-12 col-xl-7" id="main-container">
+              <div id="artistPage" class="row row-gap-5">
+                <div class="d-flex justify-content-between align-items-center mb-5 px-3">
                     <div id ="switch-icon" class="p-1">
                         <button class="bg-dark border border-dark rounded-circle me-2"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white" class="bi bi-caret-left" viewBox="0 0 16 16">
                             <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
@@ -332,349 +336,175 @@
                           </svg><span class="text-white ms-2">Username</span></button>
                     </div>
                 </div>
-                <div id="mainTrack" class="container-fluid bg-dark p-3 border  border-dark rounded mt-5" id="container-new-album">
-                    <!--<div class="row g-1">
-                     <div class="col-4">
-                        <img src="randomimage.jpg" class="img-fluid" alt="...">
+                <div class="container-fluid mt-5 ms-2">
+                  <div class="row g-1">
+                    <div class="col-6">
+                      <div class="d-flex">
+                        <i class="bi bi-check-circle"></i>
+                        <h5 class="text-light" id="artist-badge">Artista verificato</h5>
+                      </div>
+                      <h1 class="text-light">Artist Name</h1>
+                      <h5 class="py-3 text-light">3.433.158 ascoltatori mensili</h5>
                     </div>
-                        <div class="col-8">
-                            <div class="d-flex justify-content-between ">
-                          <p class="text-white fw-semibold">ALBUM</p>
-                          <button id="btn-hide" class="p-1 border-dark border-opacity-25 rounded text-center d-flex-end bg-dark text-secondary ">NASCONDI ANNUNCI</button>
-                            </div>
-                            <div id="song-title" class="mt-2">
-                                <h2 class="text-white">TITOLO CANZONE</h2>
-                            </div>
-                            <div id="author" class="mt-4">
-                                <p class="text-white">Autore</p>
-                            </div>
-                            <div id="description">
-                                <p class="text-white">Ascolta il nuovo singolo di Autore</p>
-                            </div>
-                            <div id="btn-container" class="mt-5">
-                                <button class="bg-success text-dark  border-0 rounded-pill fw-semibold py-3 px-5 me-2" id="play-btn">Play</button>
-                                <button class="bg-dark text-white border  rounded-pill border-opacity-25  fw-semibold py-3 px-5 me-2" id="save-btn">Salva</button>
-                                <button class="bg-transparent border-0 text-white fs-1" id="info">...</button>
-                            </div>
-                        </div>
-                    </div> -->
-                    
+                        
+                  </div> 
                 </div>
+              </div>
+
                 <div class="container-fluid mt-5">
-                    <div class="row g-2">
-                        <div class="d-flex justify-content-between">
-                            <h3 class="col-6 col-md-12 text-white text-left">Buonasera</h3>
-                            <div class="col-6 text-end d-md-none">
-                              <a href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-bell me-2" viewBox="0 0 16 16">
-                                  <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
-                                </svg>
-                              </a>
-                              <a href="#">
-
-                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-clock-history me-2" viewBox="0 0 16 16">
-                                  <path d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z"/>
-                                  <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z"/>
-                                  <path d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"/>
-                                </svg>
-                              </a>
-                              <a href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-gear me-2" viewBox="0 0 16 16">
-                                  <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
-                                  <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
-                                </svg>
-                              </a>
-                              
-                          </div>
+                    <div class="d-flex justify-content-start align-items-center gap-3">
+                        <div>
+                          <button data-testid="play-button" aria-label="Play" data-encore-id="buttonPrimary" class="Button-sc-qlcn5g-0 eHhJDl btn btn-success rounded-circle">
+                            <span class="ButtonInner-sc-14ud5tc-0 dpREpp encore-bright-accent-set"><span aria-hidden="true" class="IconWrapper__Wrapper-sc-1hf1hjl-0 fSnHJ"><svg role="img" height="40" width="28" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 uPxdw"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></span></span></button>
                         </div>
-                        
-                        <div class="col-6 col-md-4 bg-dark rounded ps-0">
-                            <div class="card d-flex flex-row border-0" style="width: 3rem;">
-                                <img src="randomimage.jpg"class="card-img-top" width="" alt="...">
-                                <div class="card-body">
-                                  <p class="card-text text-white flex-end">Playlist</p>
-                                </div>
-                              </div>
-                            </div>
-
-                        <div class="col-6 col-md-4 bg-dark rounded ps-0 -">
-                            <div class="card d-flex flex-row border-0" style="width: 3rem;">
-                                <img src="randomimage.jpg" class="card-img-top" width="" alt="...">
-                                <div class="card-body">
-                                  <p class="card-text text-white">Playlist</p>
-                                </div>
-                              </div>
+                        <div>
+                          <button type="button" class="btn btn-outline-light fw-bold">FOLLOWING</button>
                         </div>
-                        <div class="col-6 col-md-4 bg-dark rounded ps-0 me-">
-                            <div class="card d-flex flex-row border-0 " style="width: 3rem;">
-                                <img src="randomimage.jpg" class="card-img-top" width="" alt="...">
-                                <div class="card-body">
-                                    <p class="card-text text-white">Playlist</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6  col-md-4 bg-dark rounded ps-0 me-">
-                            <div class="card d-flex flex-row border-0 " style="width: 3rem;">
-                                <img src="randomimage.jpg" class="card-img-top" width="" alt="...">
-                                <div class="card-body">
-                                    <p class="card-text text-white">Playlist</p>
-                                </div>
-                              </div>
-                            </div>
-                        <div class="col-6 col-md-4 bg-dark rounded ps-0 me-">
-                            <div class="card d-flex flex-row border-0 " style="width: 3rem;">
-                                <img src="randomimage.jpg" class="card-img-top" width="" alt="...">
-                                <div class="card-body">
-                                    <p class="card-text text-white">Playlist</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-4 bg-dark rounded ps-0 me-">
-                            <div class="card d-flex flex-row border-0" style="width: 3rem;">
-                                <img src="randomimage.jpg" class="card-img-top" width="" alt="...">
-                                <div class="card-body">
-                                    <p class="card-text text-white">Playlist</p>
-                                </div>
-                              </div>
-                        </div>
-                        
-                        
-                        
-                    </div>
-                        
-                        
-                            
-                        
-                    </div>
+                        <div>
+                          <a href="#">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="white"
+                              class="bi bi-three-dots"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
+                              />
+                            </svg>
+                          </a>
+                        </div>                     
+                    </div>                       
+                </div>
 
 
 
                    <div class="container-fluid mt-5">
-                    <div class="row g-3">
-                        <div class="col-12 d-flex justify-content-between">
-                            <h3 class="text-white">Altro ciò che ti piace</h3>
-                            <a href="#" style="text-decoration: none;"><p class="text-secondary fw-semibold">VISUALIZZA TUTTO</p></a>
-                        </div>
-
-
-                        <div class="col-12 col-md-3">
-                            <div class="card bg-dark p-2 container-carta" style="min-height:250px; max-height: 280px;">
-                              <div class="carta">
-                                <img src="assets/imgs/main/image-9.jpg" class="card-img-top "  height="150px" alt="...">
-                                <div class="d-lg-none d-md-flex text-start mt-3 ms-2">
-                                  <svg id="heart-mobile" role="img" height="32" width="32"  aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 gQUQL">
-                                    <path d="M8.667 1.912a6.257 6.257 0 0 0-7.462 7.677c.24.906.683 1.747 1.295 2.457l7.955 9.482a2.015 2.015 0 0 0 3.09 0l7.956-9.482a6.188 6.188 0 0 0 1.382-5.234l-.49.097.49-.099a6.303 6.303 0 0 0-5.162-4.98h-.002a6.24 6.24 0 0 0-5.295 1.65.623.623 0 0 1-.848 0 6.257 6.257 0 0 0-2.91-1.568z"></path></svg>
-                                    <span class="text-white fs-1 ms-2">...</span>
+                    <div class="row flex-column-reverse flex-xl-row">
+                        <div id="popularArtistSongs"class="col-12 col-xl-7">
+                            <h3 class="text-light mb-4">Popolari</h3>
+                            <ol class="text-light fw-bold ps-0">
+                              <li class="d-flex justify-content-between align-items-center">
+                                  <div class="d-flex align-items-center gap-3">
+                                   <span>1</span> 
+                                   <img src="./assets/imgs/main/image-12.jpg" alt="artistTrack" width="35" height="35">
+                                   <h5>Ocean Avenue</h5> 
                                   </div>
-                              </div>
-                              <div>
-                                <div class="card-body corpo-carta text-start ">
-                                  <h5 class="card-title text-white fs-6">Hot Hits Italia</h5>
-                                  <p class="card-text text-secondary">La playlist più calda del momento</p>
+                                  <div class="d-flex gap-5">
+                                    <p>287.350.179</p>
+                                    <p>3:18</p>
+                                  </div>
+                              </li>
+                              <li class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center gap-3">
+                                <span>2</span>
+                                 <img src="./assets/imgs/main/image-12.jpg" alt="artistTrack" width="35" height="35">
+                                 <h5>Ocean Avenue</h5> 
                                 </div>
-                                <div class="d-lg-none d-md-flex text-end  mt-4 me-1">
-                                  <span class="text-secondary">16 brani</span><span class="ms-2 p-2 mobile-play-btn"><svg role="img" height="25" width="25" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 gQUQL"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></span>
+                                <div class="d-flex gap-5">
+                                  <p>287.350.179</p>
+                                  <p>3:18</p>
                                 </div>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                              <div class="d-flex align-items-center gap-3">
+                               <span>3</span>
+                               <img src="./assets/imgs/main/image-12.jpg" alt="artistTrack" width="35" height="35">
+                               <h5>Ocean Avenue</h5> 
                               </div>
+                              <div class="d-flex gap-5">
+                                <p>287.350.179</p>
+                                <p>3:18</p>
                               </div>
+                          </li>
+                          <li class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center gap-3">
+                              <span>4</span>
+                             <img src="./assets/imgs/main/image-12.jpg" alt="artistTrack" width="35" height="35">
+                             <h5>Ocean Avenue</h5> 
+                            </div>
+                            <div class="d-flex gap-5">
+                              <p>287.350.179</p>
+                              <p>3:18</p>
+                            </div>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center">
+                          <div class="d-flex align-items-center gap-3">
+                           <span>5</span>
+                           <img src="./assets/imgs/main/image-12.jpg" alt="artistTrack" width="35" height="35">
+                           <h5>Ocean Avenue</h5> 
+                          </div>
+                          <div class="d-flex gap-5">
+                            <p>287.350.179</p>
+                            <p>3:18</p>
+                          </div>
+                        </li>
+                      </ol>
+                      <a href="#" class="text-white-50 text-decoration-none d-none d-xl-flex" id="moreSongs">
+                        <h5>VISUALIZZA ALTRO</h5>
+                      </a>
                         </div>
+                        
+                        <div class="col-12 col-xl-5">
+                          <h3 class="text-light">Brani che ti piacciono</h3>
+                          <div class="d-flex justify-content-start align-items-center mb-3">
+                           <img src="./assets/imgs/main/image-11.jpg" class="rounded-circle me-2" width="60" height="60">
+                           <p class="text-light"><span class="text-light fw-bold">Hai messo Mi piace a 11 brani</span><br>di Imagine Dragons</p>
+                          </div>    
+                        </div> 
+                    </div>
 
-                        <div class="col-12 col-md-3">
-                          <div class="card bg-dark p-2 container-carta" style="min-height:250px; max-height: 280px;">
-                            <div class="carta">
-                              <img src="assets/imgs/main/image-3.jpg" class="card-img-top " height="150px" alt="...">
-                              <div class="d-lg-none d-md-flex text-start mt-3 ms-2">
-                                <svg id="heart-mobile" role="img" height="32" width="32"  aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 gQUQL">
-                                  <path d="M8.667 1.912a6.257 6.257 0 0 0-7.462 7.677c.24.906.683 1.747 1.295 2.457l7.955 9.482a2.015 2.015 0 0 0 3.09 0l7.956-9.482a6.188 6.188 0 0 0 1.382-5.234l-.49.097.49-.099a6.303 6.303 0 0 0-5.162-4.98h-.002a6.24 6.24 0 0 0-5.295 1.65.623.623 0 0 1-.848 0 6.257 6.257 0 0 0-2.91-1.568z"></path></svg>
-                                  <span class="text-white fs-1 ms-2">...</span>
-                                </div>
-                            </div>
-                            <div>
-                              <div class="card-body corpo-carta text-start ">
-                                <h5 class="card-title text-white fs-6">big on the internet</h5>
-                                <p class="card-text text-secondary">iykyk</p>
-                              </div>
-                              <div class="d-lg-none d-md-flex text-end  mt-4 me-1">
-                                <span class="text-secondary">12 brani</span><span class="ms-2 p-2 mobile-play-btn"><svg role="img" height="25" width="25" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 gQUQL"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></span>
-                              </div>
-                            </div>
-                            </div>
+                   </div>
+
+                   <div class="container-fluid mt-4" id="discover-more">
+                    <div class="row g-1">
+                      <div class="col-12 d-flex justify-content-between">
+                        <h3 class="text-white">Altro di Artista</h3>
+                        <a href="">
+                          <p class="text-secondary fw-semibold">Vedi discografia</p>
+                        </a>
                       </div>
-
-                      <div class="col-12 col-md-3">
-                        <div class="card bg-dark p-2 container-carta" style="min-height:250px; max-height: 280px;">
-                          <div class="carta">
-                            <img src="assets/imgs/main/image-4.jpg" class="card-img-top " height="150px" alt="...">
-                            <div class="d-lg-none d-md-flex text-start mt-3 ms-2">
-                              <svg id="heart-mobile" role="img" height="32" width="32"  aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 gQUQL">
-                                <path d="M8.667 1.912a6.257 6.257 0 0 0-7.462 7.677c.24.906.683 1.747 1.295 2.457l7.955 9.482a2.015 2.015 0 0 0 3.09 0l7.956-9.482a6.188 6.188 0 0 0 1.382-5.234l-.49.097.49-.099a6.303 6.303 0 0 0-5.162-4.98h-.002a6.24 6.24 0 0 0-5.295 1.65.623.623 0 0 1-.848 0 6.257 6.257 0 0 0-2.91-1.568z"></path></svg>
-                                <span class="text-white fs-1 ms-2">...</span>
-                              </div>
+                      <div class="col-3">
+                        <div class="card bg-dark p-2">
+                          <img src="assets/imgs/main/image-3.jpg" class="card-img-top" alt="..." />
+                          <div class="card-body">
+                            <p class="card-text text-white">Titolo Album</p>
+                            <p class="text-secondary fw-semibold">2010</p>
                           </div>
-                          <div>
-                            <div class="card-body corpo-carta text-start ">
-                              <h5 class="card-title text-white fs-6">Pop rising</h5>
-                              <p class="card-text text-secondary">hits of tomorrow</p>
-                            </div>
-                            <div class="d-lg-none d-md-flex text-end  mt-4 me-1">
-                              <span class="text-secondary">16 brani</span><span class="ms-2 p-2 mobile-play-btn"><svg role="img" height="25" width="25" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 gQUQL"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></span>
-                            </div>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="card bg-dark p-2">
+                          <img src="assets/imgs/main/image-3.jpg" class="card-img-top" alt="..." />
+                          <div class="card-body">
+                            <p class="card-text text-white">Titolo Album</p>
+                            <p class="text-secondary fw-semibold">2010</p>
                           </div>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="card bg-dark p-2">
+                          <img src="assets/imgs/main/image-3.jpg" class="card-img-top" alt="..." />
+                          <div class="card-body">
+                            <p class="card-text text-white">Titolo Album</p>
+                            <p class="text-secondary fw-semibold">2010</p>
                           </div>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="card bg-dark p-2">
+                          <img src="assets/imgs/main/image-3.jpg" class="card-img-top" alt="..." />
+                          <div class="card-body">
+                            <p class="card-text text-white">Titolo Album</p>
+                            <p class="text-secondary fw-semibold">2010</p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-
-                    <div class="col-12 col-md-3">
-                      <div class="card bg-dark p-2 container-carta" style="min-height:250px; max-height: 280px;">
-                        <div class="carta">
-                          <img src="assets/imgs/main/image-5.jpg" class="card-img-top " height="150px" alt="...">
-                          <div class="d-lg-none d-md-flex text-start mt-3 ms-2">
-                            <svg id="heart-mobile" role="img" height="32" width="32"  aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 gQUQL">
-                              <path d="M8.667 1.912a6.257 6.257 0 0 0-7.462 7.677c.24.906.683 1.747 1.295 2.457l7.955 9.482a2.015 2.015 0 0 0 3.09 0l7.956-9.482a6.188 6.188 0 0 0 1.382-5.234l-.49.097.49-.099a6.303 6.303 0 0 0-5.162-4.98h-.002a6.24 6.24 0 0 0-5.295 1.65.623.623 0 0 1-.848 0 6.257 6.257 0 0 0-2.91-1.568z"></path></svg>
-                              <span class="text-white fs-1 ms-2">...</span>
-                            </div>
-                        </div>
-                        <div>
-                          <div class="card-body corpo-carta text-start ">
-                            <h5 class="card-title text-white fs-6">In tendenza</h5>
-                            <p class="card-text text-secondary">Viral % trending</p>
-                          </div>
-                          <div class="d-lg-none d-md-flex text-end  mt-4 me-1">
-                            <span class="text-secondary">16 brani</span><span class="ms-2 p-2 mobile-play-btn"><svg role="img" height="25" width="25" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 gQUQL"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></span>
-                          </div>
-                        </div>
-                        </div>
                   </div>
-
-
-                        <!-- <div class="col-12 col-md-3">
-                            <div class="card bg-dark p-2 container-carta  " style="min-height:280px;max-height: 280px;">
-                                <img src="assets/imgs/main/image-3.jpg" class="card-img-top carta " height="150px" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title text-white fs-6">big on the internet</h5>
-                                  <p class="card-text text-secondary">iykyk</p>
-                                </div>
-                              </div>
-                        </div>
-                        <div class="col-12 col-md-3">
-                            <div class="card bg-dark p-2 container-carta" style="min-height:280px;max-height: 280px;">
-                                <img src="assets/imgs/main/image-4.jpg" class="card-img-top carta" height="150px" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title text-white fs-6">Pop Rising</h5>
-                                  <p class="card-text text-secondary">The hits of tomorrow are on fire</p>
-                                </div>
-                              </div>
-                        </div>
-                        <div class="col-12 col-md-3">
-                            <div class="card bg-dark p-2 container-carta" style="min-height:280px;max-height: 280px;">
-                                <img src="assets/imgs/main/image-5.jpg" class="card-img-top carta" height="150px" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title text-white fs-6">Canzoni tristi</h5>
-                                  <p class="card-text text-secondary">it's ok not to be ok</p>
-                                </div>
-                              </div>
-                        </div> -->
-                        
-                        <!--fine row-->
-                    </div>
-                        <!--fine container-->
-
-                   </div>
-
-                   <div class="container-fluid mt-5" id="second-section">
-                    <div class="row g-3">
-                        <div class="col-12 d-flex justify-content-between">
-                            <h3 class="text-white">Altro ciò che ti piace</h3>
-                            <a href="#" style="text-decoration: none;"><p class="text-secondary fw-semibold">VISUALIZZA TUTTO</p></a>
-                        </div>
-                        <div class="col-3">
-                            <div class="card bg-dark p-1" style="min-height:280px; max-height: 280px;">
-                                <img src="assets/imgs/main/image-6.jpg" class="card-img-top" height="150px" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title text-white fs-6">Hot Hits Italia</h5>
-                                  <p class="card-text text-secondary">La playlist più calda del momento</p>
-                                </div>
-                              </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="card bg-dark p-1 carte " style="min-height:280px;max-height: 280px;">
-                                <img src="assets/imgs/main/image-7.jpg" class="card-img-top" height="150px" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title text-white fs-6">big on the internet</h5>
-                                  <p class="card-text text-secondary">iykyk</p>
-                                </div>
-                              </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="card bg-dark p-1" style="min-height:280px;max-height: 280px;">
-                                <img src="assets/imgs/main/image-8.jpg" class="card-img-top" height="150px" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title text-white fs-6">Pop Rising</h5>
-                                  <p class="card-text text-secondary">The hits of tomorrow are on fire</p>
-                                </div>
-                              </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="card bg-dark p-1" style="min-height:280px;max-height: 280px;">
-                                <img src="assets/imgs/main/image-9.jpg" class="card-img-top" height="150px" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title text-white fs-6">Canzoni tristi</h5>
-                                  <p class="card-text text-secondary">it's ok not to be ok</p>
-                                </div>
-                              </div>
-                        </div>
-                        
-                        
-                    </div>
-
-                   </div>
-
-                   <div class="container-fluid mt-5" id="third-section">
-                    <div class="row g-3">
-                        <div class="col-12 d-flex justify-content-between">
-                            <h3 class="text-white">Altro ciò che ti piace</h3>
-                            <a href="#" style="text-decoration: none;"><p class="text-secondary fw-semibold">VISUALIZZA TUTTO</p></a>
-                        </div>
-                        <div class="col-3">
-                            <div class="card bg-dark p-1" style="min-height:280px; max-height: 280px;">
-                                <img src="assets/imgs/main/image-10.jpg" class="card-img-top" height="150px" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title text-white fs-6">Hot Hits Italia</h5>
-                                  <p class="card-text text-secondary">La playlist più calda del momento</p>
-                                </div>
-                              </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="card bg-dark p-1 carte " style="min-height:280px;max-height:280px;">
-                                <img src="assets/imgs/main/image-11.jpg" class="card-img-top" height="150px" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title text-white fs-6">big on the internet</h5>
-                                  <p class="card-text text-secondary">iykyk</p>
-                                </div>
-                              </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="card bg-dark p-1" style="min-height:280px;max-height: 280px;">
-                                <img src="assets/imgs/main/image-12.jpg" class="card-img-top" height="150px" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title text-white fs-6">Pop Rising</h5>
-                                  <p class="card-text text-secondary">The hits of tomorrow are on fire</p>
-                                </div>
-                              </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="card bg-dark p-1" style="min-height:280px;max-height: 280px;">
-                                <img src="assets/imgs/main/image-13.jpg" class="card-img-top" height="150px" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title text-white fs-6">Canzoni tristi</h5>
-                                  <p class="card-text text-secondary">it's ok not to be ok</p>
-                                </div>
-                              </div>
-                        </div>
-                        
-                        
-                    </div>
-
-                   </div>
+                    
 
                    <div class="container-fluid my-5">
                     <div class="row g-0">
@@ -776,16 +606,11 @@
                   </div>
                 </div>
             </div>
-            
-
-    </div>
+          </div>
     
-    <footer class="position-fixed bottom-0 w-100" id="footer">
-      <div id="player" class="row align-items-center bg-dark px-3 py-2 gx-0">
-        <div
-          id="containerLeft"
-          class="col-10 col-md-4 d-flex flex-row align-items-center justify-content-between justify-content-md-start"
-        >
+     <footer class="position-fixed bottom-0 w-100 border-top border-light" id="footer">
+      <div id="player" class="row align-items-center bg-dark px-4 py-2 rounded-3 rounded-sm-0">
+        <div id="containerLeft" class="col-11 col-xl-4 d-flex flex-row align-items-center justify-content-between justify-content-xl-start">
           <div class="d-flex align-items-center">
             <div>
               <a class="pe-3" href=""><img id="song-img" width="85px" src="assets/images/avatar.png" alt="" /></a>
@@ -795,23 +620,10 @@
               <a class="text-decoration-none text-light" href=""> Nirvana </a>
             </div>
           </div>
-          <div
-            class="text-light flex-grow-1 d-flex flex-md-grow-0 justify-content-end justify-content-md-center"
-            id="heart-svg"
-          >
-            <button class="ms-3 me-1 btn bg-transparent text-light fs-3 svg">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-suit-heart-fill"
-                viewbox="0 0 16 16"
-              >
-                <path
-                  d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"
-                />
-              </svg>
+          <div class="text-light flex-grow-1 d-flex flex-xl-grow-0 justify-content-end justify-content-xl-center" id="heart-svg">
+            <button class="ms-3 me-1 btn bg-transparent text-light fs-3 svg"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
+              <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"/>
+            </svg>
             </button>
           </div>
           <div>
@@ -827,10 +639,7 @@
           </div>
         </div>
 
-        <div
-          id="containerMiddle"
-          class="col-1 col-md-4 text-light d-flex flex-column align-items-end align-items-md-center gap-md-2"
-        >
+        <div id="containerMiddle" class="col-1 col-xl-4 text-light d-flex flex-column align-items-end align-items-xl-center gap-lg-2">
           <div id="playerControls" class="d-flex justify-content-center gap-2">
             <button id="shuffle" class="btn bg-transparent text-light">
               <svg
@@ -880,7 +689,7 @@
                 ></path>
               </svg>
             </button>
-            <button class="btn bg-transparent text-light" id="next">
+            <button class="btn bg-transparent text-light"  id="next"
               <svg
                 role="img"
                 height="16"
@@ -925,8 +734,8 @@
           </div>
         </div>
 
-        <div id="containerRight" class="col-1 col-md-4 d-flex justify-content-end">
-          <button class="btn bg-transparent text-light d-none d-md-inline-block" id="mic">
+        <div id="containerRight" class="col-4 d-none d-xl-flex justify-content-end">
+          <button class="btn bg-transparent text-light" id="mic">
             <svg
               role="img"
               height="16"
@@ -941,7 +750,7 @@
               ></path>
             </svg>
           </button>
-          <button class="btn bg-transparent text-light d-none d-md-inline-block" id="ddg">
+          <button class="btn bg-transparent text-light" id="ddg">
             <svg
               role="img"
               height="16"
@@ -973,7 +782,7 @@
             </svg>
           </button>
           <div id="volume" class="d-flex justify-content-center align-items-center me-0">
-            <button class="btn bg-transparent text-light d-none d-md-inline-block" id="volume-icon">
+            <button class="btn bg-transparent text-light" id="volume-icon">
               <svg
                 role="presentation"
                 height="16"
@@ -1001,6 +810,7 @@
         </div>
       </div>
     </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
