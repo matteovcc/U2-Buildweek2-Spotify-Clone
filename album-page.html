@@ -21,7 +21,7 @@
           <!--navbar-->
           <nav class="navbar navbar-expand-lg bg-transparent">
             <div class="container-fluid flex-column ps-md-0 bg-transparent">
-              <div id="navbar" class="container-fluid flex-column bg-transparent ps-0">
+              <div id="navbar" class="container-fluid flex-column bg-transparent ps-md-0">
                 <a class="navbar-brand" href="#" id="three-dots">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +37,7 @@
                   </svg>
                 </a>
                 <button
-                  class="navbar-toggler"
+                  class="navbar-toggler d-none d-md-flex"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#navbarNavDropdown"
@@ -356,14 +356,25 @@
           <div class="container-fluid mt-3">
             <div class="row">
               <div class="card d-flex flex-column align-items-center flex-md-row bg-transparent ps-0 border-0">
-                <img src="randomimage.jpg" class="card-img-top" alt="..." id="album-img" />
-                <div class="card-body">
-                  <p class="card-text text-white mt-3">Album</p>
+                <img src="assets/imgs/main/image-1.jpg" class="card-img-top pb-1" alt="..." id="album-img" />
+                <div class="card-body w-100 d-flex flex-column">
+                  <p class="card-text text-white mt-3 d-none d-md-flex">Album</p>
                   <h1 class="text-white fs-1">Titolo Album</h1>
-                  <div class="mt-5">
-                    <img src="assets/imgs/main/image-13.jpg" width="25px" class="rounded-5" alt="" id="img-icon" />
-                    <span class="text-white fw-semibold">Nome dell'artista - Anno - N brani, </span>
-                    <span class="text-muted">54 min 20 sec</span>
+                  <div class="mt-md-5 d-flex gap-3">
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="assets/imgs/main/image-13.jpg"
+                        width="35px"
+                        class="rounded-circle"
+                        alt=""
+                        id="img-icon"
+                      />
+                    </div>
+                    <div class="text-white fw-semibold d-flex flex-column flex-md-row">
+                      <span>Nome dell'artista</span><span></span><span>Anno</span
+                      ><span class="d-none d-md-flex">N° brani</span>
+                    </div>
+                    <span class="text-muted d-none d-md-flex">54 min 20 sec</span>
                   </div>
                 </div>
               </div>
@@ -434,116 +445,118 @@
               </div>
 
               <div class="container-fluid p-4">
-                <div class="row">
-                  <div class="col-1" id="number">
-                    <p class="fw-semibold text-secondary">#</p>
-                  </div>
-                  <div class="col-7" id="title">
-                    <p class="fw-semibold text-secondary">Titolo</p>
-                  </div>
-                  <div class="col-3" id="reproduction">
-                    <p class="fw-semibold text-secondary">Riproduzioni</p>
-                  </div>
-                  <div class="col-1" id="duration">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="23"
-                      height="21"
-                      fill="grey"
-                      class="bi bi-clock fw-semibold text-muted"
-                      viewbox="0 0 16 16"
-                    >
-                      <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
-                      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
-                    </svg>
+                <div class="row mb-4">
+                  <div class="d-none d-md-flex">
+                    <div class="col-1" id="number">
+                      <p class="fw-semibold text-secondary">#</p>
+                    </div>
+                    <div class="col-7" id="title">
+                      <p class="fw-semibold text-secondary">Titolo</p>
+                    </div>
+                    <div class="col-3" id="reproduction">
+                      <p class="fw-semibold text-secondary d-none d-md-flex">Riproduzioni</p>
+                    </div>
+                    <div class="col-1 d-flex justify-content-center" id="duration">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="23"
+                        height="21"
+                        fill="grey"
+                        class="bi bi-clock fw-semibold text-muted"
+                        viewbox="0 0 16 16"
+                      >
+                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+                      </svg>
+                    </div>
                   </div>
                   <hr class="text-secondary" />
 
                   <div class="col-1">
                     <p class="text-secondary fw-semibold">1</p>
                   </div>
-                  <div class="col-7">
+                  <div class="col-8 col-md-7">
                     <p class="text-white mb-0 fw-semibold">Titolo Canzone</p>
                     <p class="text-secondary fw-semibold">Autore Canzone</p>
                   </div>
-                  <div class="col-3">
+                  <div class="col-3 d-none d-md-flex">
                     <p class="text-secondary fw-semibold">2374648</p>
                   </div>
-                  <div class="col-1">
+                  <div class="col-3 col-md-1">
                     <p class="text-secondary fw-semibold">2:23</p>
                   </div>
 
                   <div class="col-1">
                     <p class="text-secondary fw-semibold">2</p>
                   </div>
-                  <div class="col-7">
+                  <div class="col-8 col-md-7">
                     <p class="text-white mb-0 fw-semibold">Titolo Canzone</p>
                     <p class="text-secondary fw-semibold">Autore Canzone</p>
                   </div>
-                  <div class="col-3">
+                  <div class="col-3 d-none d-md-flex">
                     <p class="text-secondary fw-semibold">2374648</p>
                   </div>
-                  <div class="col-1">
+                  <div class="col-3 col-md-1">
                     <p class="text-secondary fw-semibold">2:23</p>
                   </div>
 
                   <div class="col-1">
                     <p class="text-secondary fw-semibold">3</p>
                   </div>
-                  <div class="col-7">
+                  <div class="col-8 col-md-7">
                     <p class="text-white mb-0 fw-semibold">Titolo Canzone</p>
                     <p class="text-secondary fw-semibold">Autore Canzone</p>
                   </div>
-                  <div class="col-3">
+                  <div class="col-3 d-none d-md-flex">
                     <p class="text-secondary fw-semibold">2374648</p>
                   </div>
-                  <div class="col-1">
+                  <div class="col-3 col-md-1">
                     <p class="text-secondary fw-semibold">2:23</p>
                   </div>
 
                   <div class="col-1">
                     <p class="text-secondary fw-semibold">4</p>
                   </div>
-                  <div class="col-7">
+                  <div class="col-8 col-md-7">
                     <p class="text-white mb-0 fw-semibold">Titolo Canzone</p>
                     <p class="text-secondary fw-semibold">Autore Canzone</p>
                   </div>
-                  <div class="col-3">
+                  <div class="col-3 d-none d-md-flex">
                     <p class="text-secondary fw-semibold">2374648</p>
                   </div>
-                  <div class="col-1">
+                  <div class="col-3 col-md-1">
                     <p class="text-secondary fw-semibold">2:23</p>
                   </div>
 
                   <div class="col-1">
                     <p class="text-secondary fw-semibold">5</p>
                   </div>
-                  <div class="col-7">
+                  <div class="col-8 col-md-7">
                     <p class="text-white mb-0 fw-semibold">Titolo Canzone</p>
                     <p class="text-secondary fw-semibold">Autore Canzone</p>
                   </div>
-                  <div class="col-3">
+                  <div class="col-3 d-none d-md-flex">
                     <p class="text-secondary fw-semibold">2374648</p>
                   </div>
-                  <div class="col-1">
+                  <div class="col-3 col-md-1">
                     <p class="text-secondary fw-semibold">2:23</p>
                   </div>
 
                   <div class="col-1">
                     <p class="text-secondary fw-semibold">6</p>
                   </div>
-                  <div class="col-7">
+                  <div class="col-8 col-md-7">
                     <p class="text-white mb-0 fw-semibold">Titolo Canzone</p>
                     <p class="text-secondary fw-semibold">Autore Canzone</p>
                   </div>
-                  <div class="col-3">
+                  <div class="col-3 d-none d-md-flex">
                     <p class="text-secondary fw-semibold">2374648</p>
                   </div>
-                  <div class="col-1">
+                  <div class="col-3 col-md-1">
                     <p class="text-secondary fw-semibold">2:23</p>
                   </div>
 
-                  <div class="col-12 mt-3" id="rights">
+                  <div class="col-12 mt-3 d-none d-md-flex" id="rights">
                     <p class="text-secondary fw-semibold mb-0">Data di uscita</p>
                     <p class="text-secondary">&copy; Diritti riservati a .....</p>
                   </div>
@@ -598,7 +611,7 @@
             </div>
           </div>
 
-          <div class="container-fluid my-5">
+          <div class="container-fluid my-5 d-none d-md-flex">
             <div class="row g-0">
               <div class="col-3">
                 <p class="text-white mb-2">Azienda</p>
@@ -787,11 +800,11 @@
         </div>
       </div>
     </div>
-    <footer class="position-fixed bottom-0 w-100 border-md-top border-light" id="footer">
-      <div id="player" class="row align-items-center bg-dark px-4 py-2 rounded-3 rounded-sm-0">
+    <footer class="position-fixed bottom-0 w-100 border-top border-dark border-md-light" id="footer">
+      <div id="player" class="row align-items-center bg-dark px-3 py-2 gx-0">
         <div
           id="containerLeft"
-          class="col-11 col-md-4 d-flex flex-row align-items-center justify-content-between justify-content-md-start"
+          class="col-10 col-md-4 d-flex flex-row align-items-center justify-content-between justify-content-md-start"
         >
           <div class="d-flex align-items-center">
             <div>
@@ -932,8 +945,8 @@
           </div>
         </div>
 
-        <div id="containerRight" class="col-4 d-none d-md-flex justify-content-end">
-          <button class="btn bg-transparent text-light" id="mic">
+        <div id="containerRight" class="col-1 col-md-4 d-flex justify-content-end">
+          <button class="btn bg-transparent text-light d-none d-md-inline-block" id="mic">
             <svg
               role="img"
               height="16"
@@ -948,7 +961,7 @@
               ></path>
             </svg>
           </button>
-          <button class="btn bg-transparent text-light" id="ddg">
+          <button class="btn bg-transparent text-light d-none d-md-inline-block" id="ddg">
             <svg
               role="img"
               height="16"
@@ -980,7 +993,7 @@
             </svg>
           </button>
           <div id="volume" class="d-flex justify-content-center align-items-center me-0">
-            <button class="btn bg-transparent text-light" id="volume-icon">
+            <button class="btn bg-transparent text-light d-none d-md-inline-block" id="volume-icon">
               <svg
                 role="presentation"
                 height="16"

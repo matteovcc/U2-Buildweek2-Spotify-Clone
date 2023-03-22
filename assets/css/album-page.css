@@ -36,6 +36,7 @@
 body {
   font-family: "Circular";
   font-style: normal;
+  height: 100vh;
 }
 
 #main-container {
@@ -128,9 +129,10 @@ footer {
   }
   #player {
     position: fixed;
-    width: 96%;
-    margin-inline: 10px;
+    width: 94%;
+    margin-inline: 12px;
     bottom: 93px;
+    border-radius: 10px;
     justify-content: space-between;
   }
 
@@ -168,8 +170,12 @@ footer {
     scale: 1.2;
   }
 
+  #speakers svg {
+    scale: 1.2;
+  }
+
   #album-img {
-    width: 300px;
-    height: 300px;
+    width: 66%;
+    height: 66%;
   }
 }
