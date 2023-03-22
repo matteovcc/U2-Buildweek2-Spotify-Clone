@@ -371,8 +371,8 @@
                       />
                     </div>
                     <div class="text-white fw-semibold d-flex flex-column flex-md-row">
-                      <span id="artist-name">Nome dell'artista</span><span></span><span class="text-white" id="release-date">Anno</span
-                      ><span class="d-none d-md-flex">N° brani</span>
+                      <span id="artist-name">Nome dell'artista</span><span></span><span class="text-white ms-1" id="release-date">Anno</span
+                      ><span id="number-tracks" class="d-none d-md-flex ms-2">N° brani</span>
                     </div>
                     <span class="text-muted d-none d-md-flex">54 min 20 sec</span>
                   </div>
@@ -471,7 +471,8 @@
                     </div>
                   </div>
                   <hr class="text-secondary" />
-                  <ol id="list-track"></ol>
+
+                  <ol class="text-secondary px-5" id="list-track"></ol>
 
                   <div id="tracks">
 
@@ -572,7 +573,7 @@
               <div class="container-fluid mt-4" id="discover-more">
                 <div class="row g-1">
                   <div class="col-12 d-flex justify-content-between">
-                    <h3 class="text-white">Altro di Artista</h3>
+                    <h3 class="text-white">Altro di <span id ="artist-discover">Artista</span></h3>
                     <a href="">
                       <p class="text-secondary fw-semibold">Vedi discografia</p>
                     </a>
@@ -1054,20 +1055,37 @@
         const albumImg = document.getElementById ("album-img")
         const releaseDate = document.getElementById("release-date")
         const trackList = document.getElementById("list-track") 
+        const artistDiscover = document.getElementById("artist-discover")
+        const numberTracks = document.getElementById("number-tracks")
 
         albumTitle.textContent = albumData.title;
         albumArtist.textContent = albumData.artist.name;
         albumImg.src = albumData.cover;
         albumIcon.src = albumData.cover_small;
-        releaseDate.textContent = albumData.release_date ;
+        releaseDate.innerText = albumData.release_date;
+        artistDiscover.innerText = albumData.artist.name;
+        numberTracks.innerText = albumData.tracks.data.length;
+        console.log(albumData.tracks.data.length)
+        
 
         let tracks = document.getElementById("tracks");
         tracks.innerHTML = ""
 
         albumData.tracks.data.forEach((track)=>{
           const trackAlbum = document.createElement("li");
-          trackAlbum.innerHTML = `${track.title}${albumData.artist.name}`;
+          // trackAlbum.innerHTML = `<div class="ms-3"><p class="mb-0">${track.title}</p><p class="text-secondary fw-semibold">${albumData.artist.name}</p></div>`;
+          trackAlbum.innerHTML = `<div class="col-8 col-md-7">
+                    <p class="text-white mb-0 fw-semibold">${track.title}</p>
+                    <p class="text-secondary fw-semibold">${albumData.artist.name}</p>
+                  </div>
+                  <div class="col-3 d-none d-md-flex">
+                    <p class="text-secondary fw-semibold">2374648</p>
+                  </div>
+                  <div class="d-none col-md-1">
+                    <p class="text-secondary fw-semibold">2:23</p>
+                  </div>`
           trackList.appendChild(trackAlbum);
+          
         })
       }
     </script>
