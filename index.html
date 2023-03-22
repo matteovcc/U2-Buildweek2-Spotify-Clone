@@ -889,35 +889,57 @@
 
     </div>
     
-     <footer class="position-fixed bottom-0 w-100 border-md-top border-light" id="footer">
-      <div id="player" class="row align-items-center px-4 py-2">
-        <div id="containerLeft" class="col-11 col-md-4 d-flex flex-row align-items-center justify-content-center">
-          <div>
-            <a class="pe-3" href=""><img width="85px" src="assets/images/avatar.png" id="song-img" alt="" /></a>
+    <footer class="position-fixed bottom-0 w-100 border-top border-dark border-md-light" id="footer">
+      <div id="player" class="row align-items-center bg-dark px-3 py-2 gx-0">
+        <div
+          id="containerLeft"
+          class="col-10 col-md-4 d-flex flex-row align-items-center justify-content-between justify-content-md-start"
+        >
+          <div class="d-flex align-items-center">
+            <div>
+              <a class="pe-3" href=""><img id="song-img" width="85px" src="assets/images/avatar.png" alt="" /></a>
+            </div>
+            <div class="d-flex flex-column">
+              <a class="text-decoration-none text-light" href="">Come As You Are</a>
+              <a class="text-decoration-none text-light" href=""> Nirvana </a>
+            </div>
           </div>
-          <div class="d-flex flex-column">
-            <a class="text-decoration-none text-light" href="">Come As You Are</a>
-            <a class="text-decoration-none text-light" href=""> Nirvana </a>
-          </div>
-          <div class="text-light flex-grow-1 d-flex flex-md-grow-0 justify-content-end" id="heart-svg">
-            <button class="ms-3 me-1 btn bg-transparent text-light fs-3 svg"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
-              <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"/>
-            </svg></button>
+          <div
+            class="text-light flex-grow-1 d-flex flex-md-grow-0 justify-content-end justify-content-md-center"
+            id="heart-svg"
+          >
+            <button class="ms-3 me-1 btn bg-transparent text-light fs-3 svg">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-suit-heart-fill"
+                viewbox="0 0 16 16"
+              >
+                <path
+                  d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"
+                />
+              </svg>
+            </button>
           </div>
           <div>
             <button class="btn bg-transparent text-light" id="another-svg">
               <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M1 3v9h14V3H1zm0-1h14a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z"
-                    fill-rule="nonzero"
-                  ></path>
-                  <path d="M10 8h4v3h-4z"></path>
+                <path
+                  d="M1 3v9h14V3H1zm0-1h14a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z"
+                  fill-rule="nonzero"
+                ></path>
+                <path d="M10 8h4v3h-4z"></path>
               </svg>
             </button>
           </div>
         </div>
 
-        <div id="containerMiddle" class="col-1 col-md-4 text-light d-flex flex-column align-items-end align-items-md-center gap-md-2">
+        <div
+          id="containerMiddle"
+          class="col-1 col-md-4 text-light d-flex flex-column align-items-end align-items-md-center gap-md-2"
+        >
           <div id="playerControls" class="d-flex justify-content-center gap-2">
             <button id="shuffle" class="btn bg-transparent text-light">
               <svg
@@ -925,7 +947,7 @@
                 height="16"
                 width="16"
                 aria-hidden="true"
-                viewBox="0 0 16 16"
+                viewbox="0 0 16 16"
                 data-encore-id="icon"
                 class="Svg-sc-ytk21e-0 uPxdw"
               >
@@ -943,7 +965,7 @@
                 height="16"
                 width="16"
                 aria-hidden="true"
-                viewBox="0 0 16 16"
+                viewbox="0 0 16 16"
                 data-encore-id="icon"
                 class="Svg-sc-ytk21e-0 uPxdw"
               >
@@ -958,7 +980,7 @@
                 height="16"
                 width="16"
                 aria-hidden="true"
-                viewBox="0 0 16 16"
+                viewbox="0 0 16 16"
                 data-encore-id="icon"
                 class="Svg-sc-ytk21e-0 uPxdw"
               >
@@ -967,13 +989,13 @@
                 ></path>
               </svg>
             </button>
-            <button id="next" class="btn bg-transparent text-light">
+            <button class="btn bg-transparent text-light" id="next">
               <svg
                 role="img"
                 height="16"
                 width="16"
                 aria-hidden="true"
-                viewBox="0 0 16 16"
+                viewbox="0 0 16 16"
                 data-encore-id="icon"
                 class="Svg-sc-ytk21e-0 uPxdw"
               >
@@ -982,13 +1004,13 @@
                 ></path>
               </svg>
             </button>
-            <button id="repeat" class="btn bg-transparent text-light">
+            <button class="btn bg-transparent text-light" id="repeat">
               <svg
                 role="img"
                 height="16"
                 width="16"
                 aria-hidden="true"
-                viewBox="0 0 16 16"
+                viewbox="0 0 16 16"
                 data-encore-id="icon"
                 class="Svg-sc-ytk21e-0 uPxdw"
               >
@@ -1000,26 +1022,26 @@
           </div>
           <div id="playbackBar" class="container-fluid d-flex text-light justify-content-center">
             <div class="playback-bar">
-                <div>0:47</div>
+              <div>0:47</div>
+            </div>
+            <div id="playback-progressbar" class="mx-2">
+              <input type="range" min="0" max="300" step="5" />
+              <div id="progress-bar" style="--progress-bar-transform: 20%">
+                <div id="progress-bar-background"></div>
               </div>
-              <div id="playback-progressbar" class="mx-2">
-                <input type="range" min="0" max="300" step="5" />
-                <div id="progress-bar" style="--progress-bar-transform: 20%">
-                  <div id="progress-bar-background"></div>
-                </div>
-              </div>
+            </div>
             <div id="time">3:38</div>
           </div>
         </div>
 
-        <div id="containerRight" class="col-4 d-none d-md-flex justify-content-end">
-          <button class="btn bg-transparent text-light">
+        <div id="containerRight" class="col-1 col-md-4 d-flex justify-content-end">
+          <button class="btn bg-transparent text-light d-none d-md-inline-block" id="mic">
             <svg
               role="img"
               height="16"
               width="16"
               aria-hidden="true"
-              viewBox="0 0 16 16"
+              viewbox="0 0 16 16"
               data-encore-id="icon"
               class="Svg-sc-ytk21e-0 uPxdw"
             >
@@ -1028,13 +1050,13 @@
               ></path>
             </svg>
           </button>
-          <button class="btn bg-transparent text-light" id="ddg">
+          <button class="btn bg-transparent text-light d-none d-md-inline-block" id="ddg">
             <svg
               role="img"
               height="16"
               width="16"
               aria-hidden="true"
-              viewBox="0 0 16 16"
+              viewbox="0 0 16 16"
               data-encore-id="icon"
               class="Svg-sc-ytk21e-0 uPxdw"
             >
@@ -1050,7 +1072,7 @@
               width="16"
               aria-hidden="true"
               class="Svg-sc-ytk21e-0 uPxdw"
-              viewBox="0 0 16 16"
+              viewbox="0 0 16 16"
               data-encore-id="icon"
             >
               <path
@@ -1060,7 +1082,7 @@
             </svg>
           </button>
           <div id="volume" class="d-flex justify-content-center align-items-center me-0">
-            <button class="btn bg-transparent text-light" id="volume-icon">
+            <button class="btn bg-transparent text-light d-none d-md-inline-block" id="volume-icon">
               <svg
                 role="presentation"
                 height="16"
@@ -1068,7 +1090,7 @@
                 aria-hidden="true"
                 aria-label="Volume alto"
                 id="volume-icon"
-                viewBox="0 0 16 16"
+                viewbox="0 0 16 16"
                 data-encore-id="icon"
                 class="Svg-sc-ytk21e-0 uPxdw"
               >
