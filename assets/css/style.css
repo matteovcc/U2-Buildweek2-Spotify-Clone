@@ -116,7 +116,7 @@ a {
   }
 
   #navbar-menu li {
-    margin-right: 22px;
+    justify-content: center;
     flex-direction: column;
   }
 
