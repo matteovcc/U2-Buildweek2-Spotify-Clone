@@ -82,8 +82,7 @@ footer {
   #playbackBar .playback-bar,
   #playback-progressbar,
   input,
-  #time,
-  #discover-more {
+  #time {
     display: none;
   }
 
