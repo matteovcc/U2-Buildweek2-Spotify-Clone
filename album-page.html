@@ -359,7 +359,7 @@
                 <img src="assets/imgs/main/image-1.jpg" class="card-img-top pb-1" alt="..." id="album-img" />
                 <div class="card-body w-100 d-flex flex-column">
                   <p class="card-text text-white mt-3 d-none d-md-flex">Album</p>
-                  <h1 class="text-white fs-1">Titolo Album</h1>
+                  <h1 class="text-white fs-1" id="album-title">Titolo Album</h1>
                   <div class="mt-md-5 d-flex gap-3">
                     <div class="d-flex align-items-center">
                       <img
@@ -371,7 +371,7 @@
                       />
                     </div>
                     <div class="text-white fw-semibold d-flex flex-column flex-md-row">
-                      <span>Nome dell'artista</span><span></span><span>Anno</span
+                      <span id="artist-name">Nome dell'artista</span><span></span><span class="text-white" id="release-date">Anno</span
                       ><span class="d-none d-md-flex">N° brani</span>
                     </div>
                     <span class="text-muted d-none d-md-flex">54 min 20 sec</span>
@@ -471,6 +471,9 @@
                     </div>
                   </div>
                   <hr class="text-secondary" />
+                  <ol id="list-track"></ol>
+
+                  <div id="tracks">
 
                   <div class="col-1">
                     <p class="text-secondary fw-semibold">1</p>
@@ -556,6 +559,10 @@
                     <p class="text-secondary fw-semibold">2:23</p>
                   </div>
 
+                </div> <!---chiusura div track-list-->
+
+
+              
                   <div class="col-12 mt-3 d-none d-md-flex" id="rights">
                     <p class="text-secondary fw-semibold mb-0">Data di uscita</p>
                     <p class="text-secondary">&copy; Diritti riservati a .....</p>
@@ -1026,5 +1033,43 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const urlParams = new URLSearchParams(window.location.search)
+      const albumId = urlParams.get("albumId");
+
+      fetch("https://striveschool-api.herokuapp.com/api/deezer/album/75621062")
+      .then((response) => response.json())
+      .then((albumData)=>{
+        displayAlbum(albumData)
+        console.log(albumData)
+      })
+      .catch((error) => {
+        console.error(error)
+      })
+
+      function displayAlbum(albumData) {
+        const albumTitle = document.getElementById("album-title")
+        const albumArtist = document.getElementById("artist-name")
+        const albumIcon = document.getElementById("img-icon")
+        const albumImg = document.getElementById ("album-img")
+        const releaseDate = document.getElementById("release-date")
+        const trackList = document.getElementById("list-track") 
+
+        albumTitle.textContent = albumData.title;
+        albumArtist.textContent = albumData.artist.name;
+        albumImg.src = albumData.cover;
+        albumIcon.src = albumData.cover_small;
+        releaseDate.textContent = albumData.release_date ;
+
+        let tracks = document.getElementById("tracks");
+        tracks.innerHTML = ""
+
+        albumData.tracks.data.forEach((track)=>{
+          const trackAlbum = document.createElement("li");
+          trackAlbum.innerHTML = `${track.title}${albumData.artist.name}`;
+          trackList.appendChild(trackAlbum);
+        })
+      }
+    </script>
   </body>
 </html>
