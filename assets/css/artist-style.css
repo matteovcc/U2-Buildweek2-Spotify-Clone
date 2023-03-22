@@ -50,8 +50,10 @@ footer {
   background-color: #535353;
 }
 
-#artistPage {
+#artistPage{
   background-image: url("../imgs/543670.jpg");
+  background-position: top;
+  box-sizing: content-box;
 }
 
 #popularArtistSongs ol {
