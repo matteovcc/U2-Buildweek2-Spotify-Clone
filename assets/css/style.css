@@ -49,3 +49,117 @@ footer {
   width: 40px;
   height: 40px;
   }
+
+  a{
+    text-decoration: none;
+  }
+
+  @media screen and (max-width: 767px) {
+    #friends,
+    #comments,
+    #user-playlists,
+    #three-dots,
+    #icon,
+    #containerRight,
+    #next,
+    #previous,
+    #repeat,
+    #another-svg,
+    #shuffle,
+    #playbackBar .playback-bar,
+    #playback-progressbar,
+    input,
+    #time,
+    #discover-more,
+    #container-new-album,
+    #second-section,
+    #third-section,
+    #switch-icon ,
+    #profile{
+      display: none;
+    }
+  
+    #song-img {
+      width: 50px;
+    }
+
+    #main-container{
+      background-color: #121212;
+    }
+    #container-navbar {
+      position: fixed;
+      bottom: 0;
+      padding: 0;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    }
+    #player {
+      position: fixed;
+      width: 96%;
+      margin-inline: 10px;
+      bottom: 93px;
+      justify-content: space-between;
+      background-color:rgb(48, 161, 48);
+      border-radius: 10px;
+    }
+  
+    #navbar-menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 100%;
+    }
+  
+    #mobile-navbar {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  
+    #navbar-menu li {
+      margin-right: 22px;
+      flex-direction: column;
+    }
+  
+    #navbar-menu svg {
+      margin-right: 12px;
+    }
+  
+    #play {
+      background: none;
+    }
+  
+    #play svg {
+      fill: white;
+      scale: 1.2;
+    }
+  
+    #heart-svg svg {
+      scale: 1.2;
+    }
+  
+    #album-img {
+      width: 66%;
+      height: 66%;
+    }
+    .container-carta{
+      display: flex;
+      flex-direction: row;
+      
+    }
+    .corpo-carta{
+      height: 69%;
+
+    }
+    .carta{
+      width: 70%;
+    }
+    .mobile-play-btn{
+      background-color: #121212;
+      border-radius: 50px;
+      text-align: center;
+    }
+    #heart-mobile{
+      fill:rgb(29, 186, 29)
+    }
+    
+    
+  }
