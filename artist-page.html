@@ -13,10 +13,11 @@
 <body class="bg-dark">
     <div class="container-fluid" >
         <div class="row">
-          <div class="col-12 col-md-3" id="container-navbar">
-            <!--navbar-->
+          <!--navbar-->
+          <div class="col-12 col-lg-3" id="container-navbar">
+            
             <nav class="navbar navbar-expand-lg bg-transparent">
-              <div class="container-fluid flex-column ps-md-0 bg-transparent">
+              <div class="container-fluid flex-column ps-lg-0 bg-transparent">
                 <div id="navbar" class="container-fluid flex-column bg-transparent ps-0">
                   <a class="navbar-brand" href="#" id="three-dots">
                     <svg
@@ -48,7 +49,7 @@
                     id="navbarNavDropdown"
                   >
                     <div class="container-fluid d-flex" id="mobile-navbar">
-                      <ul class="navbar-nav mt-3 flex-md-column bg-transparent" id="navbar-menu">
+                      <ul class="navbar-nav mt-3 flex-lg-column bg-transparent" id="navbar-menu">
                         <li class="nav-item d-flex align-items-center">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -315,7 +316,7 @@
           </div>
 
 
-            <div class="col-12 col-md-7 p-3" id="main-container">
+            <div class="col-12 col-lg-7 p-3" id="main-container">
               <div id="artistPage" class="row row-gap-5">
                 <div class="d-flex justify-content-between align-items-center mb-5">
                     <div id ="switch-icon" class="p-1">
@@ -379,8 +380,8 @@
 
 
                    <div class="container-fluid mt-5">
-                    <div class="row flex-column-reverse flex-md-row">
-                        <div id="popularArtistSongs"class="col-12 col-md-7">
+                    <div class="row flex-column-reverse flex-lg-row">
+                        <div id="popularArtistSongs"class="col-12 col-lg-7">
                             <h3 class="text-light mb-4">Popolari</h3>
                             <ol class="text-light fw-bold ps-0">
                               <li class="d-flex justify-content-start align-items-center gap-5">
@@ -434,15 +435,15 @@
                           </div>
                         </li>
                       </ol>
-                      <a href="#" class="text-white-50 text-decoration-none d-none d-md-flex" id="moreSongs">
+                      <a href="#" class="text-white-50 text-decoration-none d-none d-lg-flex" id="moreSongs">
                         <h5>VISUALIZZA ALTRO</h5>
                       </a>
                         </div>
                         
-                        <div class="col-12 col-md-5">
+                        <div class="col-12 col-lg-5">
                           <h3 class="text-light">Brani che ti piacciono</h3>
-                          <div class="d-flex justify-content-start align-items-center">
-                           <img src="./assets/imgs/main/image-11.jpg" class="rounded-circle" width="60" height="60">
+                          <div class="d-flex justify-content-start align-items-center mb-3">
+                           <img src="./assets/imgs/main/image-11.jpg" class="rounded-circle me-2" width="60" height="60">
                            <p class="text-light"><span class="text-light fw-bold">Hai messo Mi piace a 11 brani</span><br>di Imagine Dragons</p>
                           </div>    
                         </div> 
@@ -597,7 +598,7 @@
     
      <footer class="position-fixed bottom-0 w-100 border-top border-light" id="footer">
       <div id="player" class="row align-items-center bg-dark px-4 py-2 rounded-3 rounded-sm-0">
-        <div id="containerLeft" class="col-11 col-md-4 d-flex flex-row align-items-center justify-content-between justify-content-md-start">
+        <div id="containerLeft" class="col-11 col-lg-4 d-flex flex-row align-items-center justify-content-between justify-content-lg-start">
           <div class="d-flex align-items-center">
             <div>
               <a class="pe-3" href=""><img id="song-img" width="85px" src="assets/images/avatar.png" alt="" /></a>
@@ -607,7 +608,7 @@
               <a class="text-decoration-none text-light" href=""> Nirvana </a>
             </div>
           </div>
-          <div class="text-light flex-grow-1 d-flex flex-md-grow-0 justify-content-end justify-content-md-center" id="heart-svg">
+          <div class="text-light flex-grow-1 d-flex flex-lg-grow-0 justify-content-end justify-content-lg-center" id="heart-svg">
             <button class="ms-3 me-1 btn bg-transparent text-light fs-3 svg"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
               <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"/>
             </svg>
@@ -626,7 +627,7 @@
           </div>
         </div>
 
-        <div id="containerMiddle" class="col-1 col-md-4 text-light d-flex flex-column align-items-end align-items-md-center gap-md-2">
+        <div id="containerMiddle" class="col-1 col-lg-4 text-light d-flex flex-column align-items-end align-items-lg-center gap-lg-2">
           <div id="playerControls" class="d-flex justify-content-center gap-2">
             <button id="shuffle" class="btn bg-transparent text-light">
               <svg
@@ -721,7 +722,7 @@
           </div>
         </div>
 
-        <div id="containerRight" class="col-4 d-none d-md-flex justify-content-end">
+        <div id="containerRight" class="col-4 d-none d-lg-flex justify-content-end">
           <button class="btn bg-transparent text-light" id="mic">
             <svg
               role="img"

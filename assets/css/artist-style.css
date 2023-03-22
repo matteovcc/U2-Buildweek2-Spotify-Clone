@@ -50,23 +50,25 @@ footer {
   background-color: #535353;
 }
 
-#artistPage{
+#artistPage {
   background-image: url("../imgs/543670.jpg");
 }
 
-#popularArtistSongs ol { 
+#popularArtistSongs ol {
   counter-reset: item;
   list-style-type: none;
 }
 
-#popularArtistSongs ol li { display: flex;}
+#popularArtistSongs ol li {
+  display: flex;
+}
 
-#popularArtistSongs ol li:before { 
-  content: counter(item) "  "; 
+#popularArtistSongs ol li:before {
+  content: counter(item) "  ";
   counter-increment: item;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   #friends,
   #comments,
   #moreSongs,
@@ -138,5 +140,3 @@ footer {
     scale: 1.2;
   }
 }
-
-
