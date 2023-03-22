@@ -1,0 +1,140 @@
+@font-face {
+  font-family: "Circular";
+  src: url(../fonts/CircularStd-Light.otf);
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Circular";
+  src: url(../fonts/CircularStd-LightItalic.otf);
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Circular";
+  src: url(../fonts/CircularStd-Book.otf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Circular";
+  src: url(../fonts/CircularStd-BookItalic.otf);
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Circular";
+  src: url(../fonts/CircularStd-Medium.otf);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Circular";
+  src: url(../fonts/CircularStd-MediumItalic.otf);
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Circular";
+  src: url(../fonts/CircularStd-MediumItalic.otf);
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Circular";
+  src: url(../fonts/CircularStd-Bold.otf);
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Circular";
+  src: url(../fonts/CircularStd-BoldItalic.otf);
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Circular";
+  src: url(../fonts/CircularStd-Black.otf);
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Circular";
+  src: url(../fonts/CircularStd-BlackItalic.otf);
+  font-weight: 900;
+  font-style: italic;
+}
+
+* {
+  font-size: 14px;
+}
+body {
+  font-family: "Circular";
+  font-style: normal;
+}
+
+#logoSpotify {
+  fill: black;
+  width: 140px;
+}
+
+.login {
+  width: 450px;
+}
+
+#google {
+  background: url(https://accounts.scdn.co/sso/images/google-icon.1cdc8fce9609d07f0e9d8d0bc4b61f8f.svg) center no-repeat;
+  width: 1.5rem;
+}
+
+#spacer1,
+#spacer2 {
+  width: 200px;
+  display: inline-block;
+}
+
+#accedi {
+  background-color: #1ed760;
+}
+
+#accedi:hover {
+  scale: 1.1;
+}
+
+.spacing {
+  letter-spacing: 1px;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #1ed760;
+}
+
+#showPass {
+  position: absolute;
+  right: 0px;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 12px;
+  }
+
+  form {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .login {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+  #spacer1,
+  #spacer2 {
+    display: none;
+  }
+
+  #accedi {
+    width: 50%;
+  }
+}
