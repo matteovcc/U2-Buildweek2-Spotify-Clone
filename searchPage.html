@@ -156,17 +156,22 @@
             </div>
           </nav>
         </div>
-        <main class="col-12 col-md-10 my-4 px-3 px-xl-5">
+        <main class="col-12 col-md-10 my-1 my-lg-4 px-3 px-xl-5">
           <h1 class="text-light my-4">Cerca</h1>
           <form>
             <div class="mb-4">
               <div class="d-flex align-items-center position-relative">
-                <input type="text" class="form-control" placeholder="Cosa vuoi ascoltare?" />
+                <input
+                  type="text"
+                  onsubmit="event.preventDefault()"
+                  class="form-control"
+                  placeholder="Cosa vuoi ascoltare?"
+                />
                 <button
                   id="search"
                   class="btn text-light position-absolute end-0 text-body"
                   action="onsearch"
-                  type="button"
+                  type="submit"
                 >
                   <i class="bi bi-search"></i>
                 </button>

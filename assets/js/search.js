@@ -4,7 +4,7 @@ const searchInput = document.querySelector("input");
 const container = document.getElementById("container");
 const section = document.getElementById("section");
 
-searchButton.addEventListener("click", event => {
+form.addEventListener("submit", event => {
   event.preventDefault();
   const query = searchInput.value;
   const url = `https://striveschool-api.herokuapp.com/api/deezer/search?q=${encodeURIComponent(query)}`;
