@@ -148,14 +148,21 @@ footer {
     position: fixed;
     bottom: 0;
     padding: 0;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 1) 35%,
+      rgba(0, 0, 0, 0.8) 80%,
+      rgba(0, 0, 0, 0) 100%
+    );
   }
   #player {
     position: fixed;
     width: 94%;
     margin-inline: 12px;
-    bottom: 93px;
+    bottom: 88px;
     border-radius: 10px;
+    border: 1px solid white;
     justify-content: space-between;
   }
 
@@ -200,5 +207,20 @@ footer {
   #album-img {
     width: 66%;
     height: 66%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #album {
+    font-size: 1.6rem;
+  }
+  #song-title h2 {
+    font-size: 2rem;
+  }
+  #author p {
+    font-size: 1.3rem;
+  }
+  #btn-container button {
+    font-size: 1.3rem;
   }
 }

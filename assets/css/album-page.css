@@ -98,6 +98,10 @@ footer {
   background-color: #535353;
 }
 
+.green-title{
+  color:rgb(43, 185, 43)
+}
+
 @media screen and (max-width: 767px) {
   #friends,
   #comments,
