@@ -56,6 +56,28 @@ function artistPopularSongs(artistData){
            </div>`
            popularSongsList.appendChild(songArtist)
            index++
+
+           songArtist.addEventListener("click", () => {
+            playTrack(song.preview);
+            const playerImg = document.getElementById("song-img");
+            const songSinger = document.getElementById("song-artist");
+            const songTitle = document.getElementById("song-title");
+
+
+            playerImg.src = song.album.cover_small;
+            songTitle.innerText = song.title;
+            songSinger.innerText = song.artist.name;
+           })
+
+           const playBtn = document.getElementById("play");
+           playBtn.addEventListener("click", () => {
+            playTrack()
+           })
+           function playTrack(trackUrl) {
+            const audioPlayer = document.getElementById("audio-player")
+            audioPlayer.src = trackUrl
+            audioPlayer.play();
+           }
         })
         const favoriteSongs = document.getElementById("favoriteArtistSongs")
         const info = document.createElement("div")
