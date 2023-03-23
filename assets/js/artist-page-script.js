@@ -56,6 +56,14 @@ function artistPopularSongs(artistData){
            </div>`
            popularSongsList.appendChild(songArtist)
            index++
-        });
+        })
+        const favoriteSongs = document.getElementById("favoriteArtistSongs")
+        const info = document.createElement("div")
+        info.style.display = "flex"
+        info.style.justifyContent = "start"
+        info.style.alignItems = "center"
+        info.innerHTML = `<img src=${artistData.picture_small} class="rounded-circle me-2" width="60" height="60">
+        <p class="text-light"><span class="text-light fw-bold">Hai messo Mi piace a 11 brani</span><br>di ${artistData.name}</p>`
+        favoriteSongs.appendChild(info)
     })
 }
