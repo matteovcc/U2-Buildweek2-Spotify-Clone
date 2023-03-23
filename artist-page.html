@@ -334,19 +334,6 @@
                           </svg><span class="text-white ms-2">Username</span></button>
                     </div>
                 </div>
-                <div class="container-fluid mt-5 ms-2">
-                  <div class="row g-1">
-                    <div class="col-6">
-                      <div class="d-flex">
-                        <i class="bi bi-check-circle"></i>
-                        <h5 class="text-light" id="artist-badge">Artista verificato</h5>
-                      </div>
-                      <h1 class="text-light">Artist Name</h1>
-                      <h5 class="py-3 text-light">3.433.158 ascoltatori mensili</h5>
-                    </div>
-                        
-                  </div> 
-                </div>
               </div>
 
                 <div class="container-fluid mt-5">
@@ -383,75 +370,18 @@
                     <div class="row flex-column-reverse flex-xl-row">
                         <div id="popularArtistSongs"class="col-12 col-xl-7">
                             <h3 class="text-light mb-4">Popolari</h3>
-                            <ol class="text-light fw-bold ps-0">
-                              <li class="d-flex justify-content-between align-items-center">
-                                  <div class="d-flex align-items-center gap-3">
-                                   <span>1</span> 
-                                   <img src="./assets/imgs/main/image-12.jpg" alt="artistTrack" width="35" height="35">
-                                   <h5>Ocean Avenue</h5> 
-                                  </div>
-                                  <div class="d-flex gap-5">
-                                    <p>287.350.179</p>
-                                    <p>3:18</p>
-                                  </div>
-                              </li>
-                              <li class="d-flex justify-content-between align-items-center">
-                                <div class="d-flex align-items-center gap-3">
-                                <span>2</span>
-                                 <img src="./assets/imgs/main/image-12.jpg" alt="artistTrack" width="35" height="35">
-                                 <h5>Ocean Avenue</h5> 
-                                </div>
-                                <div class="d-flex gap-5">
-                                  <p>287.350.179</p>
-                                  <p>3:18</p>
-                                </div>
-                            </li>
-                            <li class="d-flex justify-content-between align-items-center">
-                              <div class="d-flex align-items-center gap-3">
-                               <span>3</span>
-                               <img src="./assets/imgs/main/image-12.jpg" alt="artistTrack" width="35" height="35">
-                               <h5>Ocean Avenue</h5> 
-                              </div>
-                              <div class="d-flex gap-5">
-                                <p>287.350.179</p>
-                                <p>3:18</p>
-                              </div>
-                          </li>
-                          <li class="d-flex justify-content-between align-items-center">
-                            <div class="d-flex align-items-center gap-3">
-                              <span>4</span>
-                             <img src="./assets/imgs/main/image-12.jpg" alt="artistTrack" width="35" height="35">
-                             <h5>Ocean Avenue</h5> 
-                            </div>
-                            <div class="d-flex gap-5">
-                              <p>287.350.179</p>
-                              <p>3:18</p>
-                            </div>
-                        </li>
-                        <li class="d-flex justify-content-between align-items-center">
-                          <div class="d-flex align-items-center gap-3">
-                           <span>5</span>
-                           <img src="./assets/imgs/main/image-12.jpg" alt="artistTrack" width="35" height="35">
-                           <h5>Ocean Avenue</h5> 
-                          </div>
-                          <div class="d-flex gap-5">
-                            <p>287.350.179</p>
-                            <p>3:18</p>
-                          </div>
-                        </li>
-                      </ol>
-                      <a href="#" class="text-white-50 text-decoration-none d-none d-xl-flex" id="moreSongs">
-                        <h5>VISUALIZZA ALTRO</h5>
-                      </a>
-                        </div>
-                        
+                        </div>   
+
                         <div class="col-12 col-xl-5">
                           <h3 class="text-light">Brani che ti piacciono</h3>
-                          <div class="d-flex justify-content-start align-items-center mb-3">
-                           <img src="./assets/imgs/main/image-11.jpg" class="rounded-circle me-2" width="60" height="60">
-                           <p class="text-light"><span class="text-light fw-bold">Hai messo Mi piace a 11 brani</span><br>di Imagine Dragons</p>
+                          <div id="favoriteArtistSongs"class="d-flex justify-content-start align-items-center mb-3">
+                           <!--<img src="./assets/imgs/main/image-11.jpg" class="rounded-circle me-2" width="60" height="60">
+                           <p class="text-light"><span class="text-light fw-bold">Hai messo Mi piace a 11 brani</span><br>di Imagine Dragons</p>-->
                           </div>    
                         </div> 
+                        <a href="#" class="text-white-50 text-decoration-none d-none d-xl-flex" id="moreSongs">
+                          <h5>VISUALIZZA ALTRO</h5>
+                        </a>
                     </div>
 
                    </div>
@@ -551,7 +481,7 @@
                 <div id="friends" class="col-2 container-fluid p-0 bg-dark">
                   <div class="d-flex justify-content-between mt-2 ms-2">
                     <h5 class="text-light">Attività amici</h5>
-                    <div class="d-flex flex-end">
+                    <div class="d-flex flex-end me-2 mt-1">
                       
                       <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-plus" viewBox="0 0 16 16">
                         <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
@@ -566,8 +496,8 @@
                     <div class="d-flex justify-content-between">
                       <div><img width="50px" src="assets/imgs/search/image-19.jpg" alt="amico1"></div>
                       <div class="text-align-start">
-                        <p>Charlie Hookham</p>
-                        <p>all right - ajeje</p>
+                        <p class="mb-0">Charlie Hookham</p>
+                        <p class="mb-0">all right - ajeje</p>
                         <p><i class="bi bi-0-circle"></i> EP III</p>
                       </div>
                       <div>
@@ -577,8 +507,8 @@
                     <div class="d-flex justify-content-between">
                       <div><img width="50px" src="assets/imgs/search/image-19.jpg" alt="amico1"></div>
                       <div class="text-align-start">
-                        <p>Charlie Hookham</p>
-                        <p>all right - ajeje</p>
+                        <p class="mb-0">Charlie Hookham</p>
+                        <p class="mb-0">all right - ajeje</p>
                         <p><i class="bi bi-0-circle"></i> EP III</p>
                       </div>
                       <div>
@@ -588,8 +518,8 @@
                     <div class="d-flex justify-content-between">
                       <div><img width="50px" src="assets/imgs/search/image-19.jpg" alt="amico1"></div>
                       <div class="text-align-start">
-                        <p>Charlie Hookham</p>
-                        <p>all right - ajeje</p>
+                        <p class="mb-0">Charlie Hookham</p>
+                        <p class="mb-0">all right - ajeje</p>
                         <p><i class="bi bi-0-circle"></i> EP III</p>
                       </div>
                       <div>
@@ -609,8 +539,8 @@
               <a class="pe-3" href=""><img id="song-img" width="85px" src="assets/images/avatar.png" alt="" /></a>
             </div>
             <div class="d-flex flex-column">
-              <a class="text-decoration-none text-light" href="">Come As You Are</a>
-              <a class="text-decoration-none text-light" href=""> Nirvana </a>
+              <a class="text-decoration-none text-light" id="song-title" href="">Come As You Are</a>
+              <a class="text-decoration-none text-light" id="song-artist" href=""> Nirvana </a>
             </div>
           </div>
           <div class="text-light flex-grow-1 d-flex flex-xl-grow-0 justify-content-end justify-content-xl-center" id="heart-svg">
@@ -802,6 +732,7 @@
           </div>
         </div>
       </div>
+      <audio id="audio-player" controls class="d-none"></audio>
     </footer>
 
     <script
@@ -809,5 +740,6 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script src="./assets/js/artist-page-script.js"></script>
   </body>
 </html>

@@ -1,6 +1,6 @@
 #main-container {
   background: rgb(24, 21, 21);
-  background: linear-gradient(0deg, rgb(32, 28, 28) 40%, rgb(206, 180, 67) 82%);
+  /* background: linear-gradient(0deg, rgb(32, 28, 28) 40%, rgb(206, 180, 67) 82%); */
   max-height: 90vh;
   overflow: auto;
 }
@@ -41,15 +41,15 @@ a {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #535353;
+  background: black;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: black;
+  background: #535353;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -60,7 +60,7 @@ footer {
   background-color: #535353;
 }
 
-#artistPage{
+#artistPagie{
   background-image: url("../imgs/543670.jpg");
   background-position: top;
   box-sizing: content-box;

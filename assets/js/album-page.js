@@ -68,32 +68,10 @@ function displayAlbum(albumData) {
       songTitle.innerText = track.title;
       songArtist.innerText = albumData.artist.name;
 
-      trackAlbum.forEach((item) => {
-          item.classList.add("green-title");
-      })
     });
 
     trackList.appendChild(trackAlbum);
 
-    // function playTrack(trackUrl) {
-    //   const audioPlayer = document.getElementById("audio-player");
-    //   audioPlayer.src = trackUrl;
-    //   audioPlayer.play();
-    // }
-    // function playTrack(trackUrl) {
-    //     const audioPlayer = document.getElementById("audio-player");
-    //     const playButton = document.getElementById("play-button");
-    //     if (isPlaying) {
-    //       audioPlayer.pause();
-    //       playButton.innerHTML = '<i class="bi bi-play"></i>';
-    //     } else {
-    //       audioPlayer.src = trackUrl;
-    //       audioPlayer.play();
-    //       playButton.innerHTML = '<i class="bi bi-pause"></i>';
-    //     }
-    //     isPlaying = !isPlaying;
-    //     highlightCurrentTrack();
-    //   }
     function playTrack(trackUrl) {
         const audioPlayer = document.getElementById("audio-player");
         const playButton = document.getElementById("play-button");
