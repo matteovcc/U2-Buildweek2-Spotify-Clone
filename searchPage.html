@@ -99,7 +99,7 @@
                   </div>
                 </div>
 
-                <div class="container-fluid bg-dark flex-column">
+                <div class="container-fluid flex-column">
                   <ul id="user-playlists" class="navbar-nav mt-4 flex-column">
                     <li class="nav-item d-flex align-items-center">
                       <svg
@@ -162,51 +162,58 @@
             <div class="mb-4">
               <div class="d-flex align-items-center position-relative">
                 <input type="text" class="form-control" placeholder="Cosa vuoi ascoltare?" />
-                <button id="search" class="btn text-light position-absolute end-0 text-body" type="button">
+                <button
+                  id="search"
+                  class="btn text-light position-absolute end-0 text-body"
+                  action="onsearch"
+                  type="button"
+                >
                   <i class="bi bi-search"></i>
                 </button>
               </div>
             </div>
           </form>
           <h2 class="text-light text-center mt-4">Sfoglia tutto</h2>
-          <div id="genre" class="row d-flex justify-content-center mt-3">
-            <div class="col-5 bg-warning h-100 mx-2 position-relative rounded-1">
-              <h5 class="py-2 text-light">Podcast</h5>
-              <img src="assets/imgs/search/image-2.jpg" alt="" />
+          <div id="container" class="container">
+            <div id="genre" class="row d-flex justify-content-center mt-3">
+              <div class="col-5 bg-warning h-100 mx-2 position-relative rounded-1">
+                <h5 class="py-2 text-light">Podcast</h5>
+                <img src="assets/imgs/search/image-2.jpg" alt="" />
+              </div>
+              <div class="col-5 bg-primary h-100 mx-2 position-relative rounded-1">
+                <h5 class="py-2 text-light">Create per te</h5>
+                <img src="assets/imgs/search/image-12.jpg" alt="" />
+              </div>
             </div>
-            <div class="col-5 bg-primary h-100 mx-2 position-relative rounded-1">
-              <h5 class="py-2 text-light">Create per te</h5>
-              <img src="assets/imgs/search/image-12.jpg" alt="" />
+            <div id="genre" class="row d-flex justify-content-center mt-3">
+              <div class="col-5 bg-danger h-100 mx-2 position-relative rounded-1">
+                <h5 class="py-2 text-light">Podcast</h5>
+                <img src="assets/imgs/search/image-4.jpg" alt="" />
+              </div>
+              <div class="col-5 bg-primary h-100 mx-2 position-relative rounded-1">
+                <h5 class="py-2 text-light">Create per te</h5>
+                <img src="assets/imgs/search/image-5.jpg" alt="" />
+              </div>
             </div>
-          </div>
-          <div id="genre" class="row d-flex justify-content-center mt-3">
-            <div class="col-5 bg-danger h-100 mx-2 position-relative rounded-1">
-              <h5 class="py-2 text-light">Podcast</h5>
-              <img src="assets/imgs/search/image-4.jpg" alt="" />
+            <div id="genre" class="row d-flex justify-content-center mt-3">
+              <div class="col-5 bg-success h-100 mx-2 position-relative rounded-1">
+                <h5 class="py-2 text-light">Podcast</h5>
+                <img src="assets/imgs/search/image-6.jpg" alt="" />
+              </div>
+              <div class="col-5 bg-secondary h-100 mx-2 position-relative rounded-1">
+                <h5 class="py-2 text-light">Create per te</h5>
+                <img src="assets/imgs/search/image-7.jpg" alt="" />
+              </div>
             </div>
-            <div class="col-5 bg-primary h-100 mx-2 position-relative rounded-1">
-              <h5 class="py-2 text-light">Create per te</h5>
-              <img src="assets/imgs/search/image-5.jpg" alt="" />
-            </div>
-          </div>
-          <div id="genre" class="row d-flex justify-content-center mt-3">
-            <div class="col-5 bg-success h-100 mx-2 position-relative rounded-1">
-              <h5 class="py-2 text-light">Podcast</h5>
-              <img src="assets/imgs/search/image-6.jpg" alt="" />
-            </div>
-            <div class="col-5 bg-secondary h-100 mx-2 position-relative rounded-1">
-              <h5 class="py-2 text-light">Create per te</h5>
-              <img src="assets/imgs/search/image-7.jpg" alt="" />
-            </div>
-          </div>
-          <div id="genre" class="row d-flex justify-content-center mt-3">
-            <div class="col-5 bg-info h-100 mx-2 position-relative rounded-1">
-              <h5 class="py-2 text-light">Podcast</h5>
-              <img src="assets/imgs/search/image-8.jpg" alt="" />
-            </div>
-            <div class="col-5 bg-primary h-100 mx-2 position-relative rounded-1">
-              <h5 class="py-2 text-light">Create per te</h5>
-              <img src="assets/imgs/search/image-9.jpg" alt="" />
+            <div id="genre" class="row d-flex justify-content-center mt-3">
+              <div class="col-5 bg-info h-100 mx-2 position-relative rounded-1">
+                <h5 class="py-2 text-light">Podcast</h5>
+                <img src="assets/imgs/search/image-8.jpg" alt="" />
+              </div>
+              <div class="col-5 bg-primary h-100 mx-2 position-relative rounded-1">
+                <h5 class="py-2 text-light">Create per te</h5>
+                <img src="assets/imgs/search/image-9.jpg" alt="" />
+              </div>
             </div>
           </div>
         </main>
@@ -517,6 +524,7 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"
       ></script>
+      <script src="assets/js/search.js"></script>
     </div>
   </body>
 </html>

@@ -79,7 +79,7 @@
             <input
               type="text"
               class="form-control"
-              id="exampleInputEmail1"
+              id="inputEmail"
               name="exampleInputEmail1"
               placeholder="Indirizzo e-mail o nome utente"
               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$|^[a-zA-Z0-9_\-]+$"
@@ -88,8 +88,8 @@
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label fw-bold">Password</label>
             <div class="d-flex position-relative align-items-center">
-              <input type="password" class="form-control" placeholder="Password" />
-              <button id="showPass" class="btn" type="button" id="togglePassword">
+              <input id="passControl" type="password" class="form-control" placeholder="Password" />
+              <button id="showPass" onclick="showPass()" class="btn" type="button" id="togglePassword">
                 <i class="bi bi-eye-slash fs-4"></i>
               </button>
             </div>
@@ -123,5 +123,6 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script src="assets/js/login.js"></script>
   </body>
 </html>
