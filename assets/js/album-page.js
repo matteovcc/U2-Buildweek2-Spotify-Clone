@@ -68,9 +68,6 @@ function displayAlbum(albumData) {
       songTitle.innerText = track.title;
       songArtist.innerText = albumData.artist.name;
 
-      trackAlbum.forEach((item) => {
-          item.classList.add("green-title");
-      })
     });
 
     trackList.appendChild(trackAlbum);
