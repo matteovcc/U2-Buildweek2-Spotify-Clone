@@ -13,7 +13,7 @@
 <body>
     <div class="container-fluid" >
         <div class="row">
-          <div class="col-12 col-md-3 bg-dark" id="container-navbar">
+          <div class="d-none d-lg-block col-lg-3 bg-dark" id="container-navbar">
             <!--navbar-->
             <nav class="navbar navbar-expand-lg bg-body-dark">
               <div class="container-fluid  flex-column ps-md-0 bg-transparent">
@@ -67,7 +67,7 @@
                           <a
                             class="nav-link active text-light"
                             aria-current="page"
-                            href="#"
+                            href="index.html"
                             >Home</a
                           >
                         </li>
@@ -84,7 +84,7 @@
                               d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
                             />
                           </svg>
-                          <a class="nav-link text-light" href="#">Cerca</a>
+                          <a class="nav-link text-light" href="searchPage.html">Cerca</a>
                         </li>
                         <li class="nav-item d-flex align-items-center">
                           <svg
@@ -315,8 +315,8 @@
               </div>
             </div>
           </div>
-            <div class="col-12 col-md-7 p-3" id="main-container">
-                <div class="d-flex justify-content-between align-items-center">
+            <div class="col-12 col-lg-7 p-3" id="main-container">
+                <div class="d-none d-xl-flex justify-content-between align-items-center">
                     <div id ="switch-icon" class="p-1">
                         <button class="bg-dark border border-dark rounded-circle me-2"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white" class="bi bi-caret-left" viewBox="0 0 16 16">
                             <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
@@ -332,32 +332,7 @@
                           </svg><span class="text-white ms-2">Username</span></button>
                     </div>
                 </div>
-                <div id="mainTrack" class="container-fluid bg-dark p-3 border  border-dark rounded mt-5" id="container-new-album">
-                    <!--<div class="row g-1">
-                     <div class="col-4">
-                        <img src="randomimage.jpg" class="img-fluid" alt="...">
-                    </div>
-                        <div class="col-8">
-                            <div class="d-flex justify-content-between ">
-                          <p class="text-white fw-semibold">ALBUM</p>
-                          <button id="btn-hide" class="p-1 border-dark border-opacity-25 rounded text-center d-flex-end bg-dark text-secondary ">NASCONDI ANNUNCI</button>
-                            </div>
-                            <div id="song-title" class="mt-2">
-                                <h2 class="text-white">TITOLO CANZONE</h2>
-                            </div>
-                            <div id="author" class="mt-4">
-                                <p class="text-white">Autore</p>
-                            </div>
-                            <div id="description">
-                                <p class="text-white">Ascolta il nuovo singolo di Autore</p>
-                            </div>
-                            <div id="btn-container" class="mt-5">
-                                <button class="bg-success text-dark  border-0 rounded-pill fw-semibold py-3 px-5 me-2" id="play-btn">Play</button>
-                                <button class="bg-dark text-white border  rounded-pill border-opacity-25  fw-semibold py-3 px-5 me-2" id="save-btn">Salva</button>
-                                <button class="bg-transparent border-0 text-white fs-1" id="info">...</button>
-                            </div>
-                        </div>
-                    </div> -->
+                <div id="mainTrack" class="container-fluid d-none d-xl-block bg-dark p-3 border  border-dark rounded mt-5" id="container-new-album">
                     
                 </div>
                 <div class="container-fluid mt-5">
@@ -390,7 +365,7 @@
                         
                         <div class="col-6 col-md-4 bg-dark rounded ps-0">
                             <div class="card d-flex flex-row border-0" style="width: 3rem;">
-                                <img src="randomimage.jpg"class="card-img-top" width="" alt="...">
+                                <img src="assets/imgs/main/image-17.jpg" class="card-img-top" width="" alt="...">
                                 <div class="card-body">
                                   <p class="card-text text-white flex-end">Playlist</p>
                                 </div>
@@ -399,7 +374,7 @@
 
                         <div class="col-6 col-md-4 bg-dark rounded ps-0 -">
                             <div class="card d-flex flex-row border-0" style="width: 3rem;">
-                                <img src="randomimage.jpg" class="card-img-top" width="" alt="...">
+                                <img src="assets/imgs/main/image-18.jpg" class="card-img-top" width="" alt="...">
                                 <div class="card-body">
                                   <p class="card-text text-white">Playlist</p>
                                 </div>
@@ -407,7 +382,7 @@
                         </div>
                         <div class="col-6 col-md-4 bg-dark rounded ps-0 me-">
                             <div class="card d-flex flex-row border-0 " style="width: 3rem;">
-                                <img src="randomimage.jpg" class="card-img-top" width="" alt="...">
+                                <img src="assets/imgs/main/image-19.jpg" class="card-img-top" width="" alt="...">
                                 <div class="card-body">
                                     <p class="card-text text-white">Playlist</p>
                                 </div>
@@ -415,7 +390,7 @@
                         </div>
                         <div class="col-6  col-md-4 bg-dark rounded ps-0 me-">
                             <div class="card d-flex flex-row border-0 " style="width: 3rem;">
-                                <img src="randomimage.jpg" class="card-img-top" width="" alt="...">
+                                <img src="assets/imgs/main/image-7.jpg" class="card-img-top" width="" alt="...">
                                 <div class="card-body">
                                     <p class="card-text text-white">Playlist</p>
                                 </div>
@@ -423,7 +398,7 @@
                             </div>
                         <div class="col-6 col-md-4 bg-dark rounded ps-0 me-">
                             <div class="card d-flex flex-row border-0 " style="width: 3rem;">
-                                <img src="randomimage.jpg" class="card-img-top" width="" alt="...">
+                                <img src="assets/imgs/main/image-12.jpg" class="card-img-top" width="" alt="...">
                                 <div class="card-body">
                                     <p class="card-text text-white">Playlist</p>
                                 </div>
@@ -431,7 +406,7 @@
                         </div>
                         <div class="col-6 col-md-4 bg-dark rounded ps-0 me-">
                             <div class="card d-flex flex-row border-0" style="width: 3rem;">
-                                <img src="randomimage.jpg" class="card-img-top" width="" alt="...">
+                                <img src="assets/imgs/main/image-13.jpg" class="card-img-top" width="" alt="...">
                                 <div class="card-body">
                                     <p class="card-text text-white">Playlist</p>
                                 </div>
@@ -725,7 +700,7 @@
                     </div>
                    </div>
                 </div>
-                <div id="friends" class="col-2 container-fluid p-0 bg-dark">
+                <div id="friends" class="d-none d-lg-block col-2 container-fluid p-0 bg-dark">
                   <div class="d-flex justify-content-between mt-2 ms-2">
                     <h5 class="text-light">Attività amici</h5>
                     <div class="d-flex flex-end mt-1 me-1">

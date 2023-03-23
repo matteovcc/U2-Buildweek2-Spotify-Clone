@@ -1,10 +1,8 @@
-const endPoint = "https://striveschool-api.herokuapp.com/api/deezer/track/";
+const endPoint = "https://striveschool-api.herokuapp.com/api/deezer/album/390984";
 const urlParams = new URLSearchParams(window.location.search);
 const albumId = urlParams.get("albumId");
 
-let trackID = "3590185";
-
-fetch(endPoint + trackID)
+fetch(endPoint)
   .then(response => response.json())
   .then(trackData => {
     track(trackData);
@@ -15,17 +13,17 @@ fetch(endPoint + trackID)
 
 function track(trackData) {
   const mainTrack = document.getElementById("mainTrack");
-  mainTrack.innerHTML = `<div id="mainTrack"class="row g-1">
+  mainTrack.innerHTML = `<div id="mainTrack" class="row g-1">
   <div class="col-4">
-    <img src="${trackData.picture_big}" class="img-fluid" alt="${trackData.title}">
+    <img src="${trackData.artist.picture_xl}" class="img-fluid" alt="${trackData.title}">
   </div>
-  <div class="col-8">
+  <div class="col-8 px-3">
     <div class="d-flex justify-content-between">
-      <p class="text-white fw-semibold">${trackData.album}</p>
-      <button id="btn-hide" class="p-1 border-dark border-opacity-25 rounded text-center d-flex-end bg-dark text-secondary ">NASCONDI ANNUNCI</button>      
+      <p class="text-white fw-semibold">ALBUM</p>
+      <button id="btn-hide" class="p-1 border-dark border-opacity-25 rounded-2 text-center d-flex-end bg-dark text-secondary fs-6">NASCONDI ANNUNCI</button>      
     </div>
     <div id="song-title" class="mt-2">
-      <h2 class="text-white">${trackData.title}</h2>
+      <h2 class="text-white fs-1">${trackData.title}</h2>
     </div>
     <div id="author" class="mt-4">
       <p class="text-white">${trackData.artist.name}</p>
@@ -38,3 +36,14 @@ function track(trackData) {
   </div>
 `;
 }
+
+// document.addEventListener("DOMContentLoaded", function hide() {
+//   const mainTrack = document.getElementById("mainTrack");
+//   const hideBtn = document.getElementById("btn-hide");
+
+//   hideBtn.addEventListener("click", event => {
+//     event.preventDefault();
+//     mainTrack.classList.add("d-none");
+//   });
+// });
+// onclick="hide()"
