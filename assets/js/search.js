@@ -24,11 +24,13 @@ searchButton.addEventListener("click", event => {
       console.log(error);
     });
 });
+
 function search(data) {
   data.data.forEach(element => {
-    if ((query = element.artist.name)) {
+    const query = searchInput.value;
+    if (query === element.artist.name) {
       section.innerHTML = element.artist.name;
-    } else if ((query = element.title)) {
+    } else if (query === element.title) {
       section.innerHTML = element.title;
     } else {
       section.innerHTML = "Risultati della ricerca:";
@@ -59,3 +61,15 @@ function search(data) {
     container.appendChild(newDiv);
   });
 }
+
+// function search(data) {
+//   data.data.forEach(element => {
+//     const track = element.preview;
+//     const play = getElementById("play-btn");
+//     play.addEventListener("click", () =>
+//     const trackImg
+//     const trackTitle
+//     const artistName
+
+//     )
+//   }
