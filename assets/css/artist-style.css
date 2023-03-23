@@ -30,6 +30,16 @@ a {
   text-decoration: none;
 }
 
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
