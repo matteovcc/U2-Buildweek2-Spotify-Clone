@@ -121,6 +121,15 @@ footer {
   color: white;
 }
 
+h5 {
+  font-size: 1.1rem;
+  padding-inline: 0.5rem;
+}
+
+#card {
+  overflow: hidden;
+}
+
 @media screen and (max-width: 767px) {
   #friends,
   #comments,
@@ -145,6 +154,7 @@ footer {
     width: 50px;
   }
   #container-navbar {
+    z-index: 5;
     position: fixed;
     bottom: 0;
     padding: 0;
@@ -159,7 +169,7 @@ footer {
   #player {
     position: fixed;
     width: 94%;
-    margin-inline: 12px;
+    margin-inline: auto;
     bottom: 88px;
     border-radius: 10px;
     border: 1px solid white;
@@ -208,6 +218,15 @@ footer {
     width: 66%;
     height: 66%;
   }
+  #card {
+    width: calc(85% / 2);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #card {
+    width: calc(90% / 4);
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -222,5 +241,11 @@ footer {
   }
   #btn-container button {
     font-size: 1.3rem;
+  }
+
+  #card {
+    aspect-ratio: 1 / 1;
+    width: calc(90% / 8);
+    overflow: hidden;
   }
 }
