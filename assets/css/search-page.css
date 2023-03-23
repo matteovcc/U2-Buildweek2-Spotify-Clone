@@ -209,3 +209,18 @@ footer {
     height: 66%;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  #album {
+    font-size: 1.6rem;
+  }
+  #song-title h2 {
+    font-size: 2rem;
+  }
+  #author p {
+    font-size: 1.3rem;
+  }
+  #btn-container button {
+    font-size: 1.3rem;
+  }
+}
