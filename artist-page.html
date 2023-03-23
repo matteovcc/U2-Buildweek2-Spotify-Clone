@@ -334,19 +334,6 @@
                           </svg><span class="text-white ms-2">Username</span></button>
                     </div>
                 </div>
-                <div class="container-fluid mt-5 ms-2">
-                  <div class="row g-1">
-                    <div class="col-6">
-                      <div class="d-flex">
-                        <i class="bi bi-check-circle"></i>
-                        <h5 class="text-light" id="artist-badge">Artista verificato</h5>
-                      </div>
-                      <h1 class="text-light">Artist Name</h1>
-                      <h5 class="py-3 text-light">3.433.158 ascoltatori mensili</h5>
-                    </div>
-                        
-                  </div> 
-                </div>
               </div>
 
                 <div class="container-fluid mt-5">
@@ -383,75 +370,18 @@
                     <div class="row flex-column-reverse flex-xl-row">
                         <div id="popularArtistSongs"class="col-12 col-xl-7">
                             <h3 class="text-light mb-4">Popolari</h3>
-                            <ol class="text-light fw-bold ps-0">
-                              <li class="d-flex justify-content-between align-items-center">
-                                  <div class="d-flex align-items-center gap-3">
-                                   <span>1</span> 
-                                   <img src="./assets/imgs/main/image-12.jpg" alt="artistTrack" width="35" height="35">
-                                   <h5>Ocean Avenue</h5> 
-                                  </div>
-                                  <div class="d-flex gap-5">
-                                    <p>287.350.179</p>
-                                    <p>3:18</p>
-                                  </div>
-                              </li>
-                              <li class="d-flex justify-content-between align-items-center">
-                                <div class="d-flex align-items-center gap-3">
-                                <span>2</span>
-                                 <img src="./assets/imgs/main/image-12.jpg" alt="artistTrack" width="35" height="35">
-                                 <h5>Ocean Avenue</h5> 
-                                </div>
-                                <div class="d-flex gap-5">
-                                  <p>287.350.179</p>
-                                  <p>3:18</p>
-                                </div>
-                            </li>
-                            <li class="d-flex justify-content-between align-items-center">
-                              <div class="d-flex align-items-center gap-3">
-                               <span>3</span>
-                               <img src="./assets/imgs/main/image-12.jpg" alt="artistTrack" width="35" height="35">
-                               <h5>Ocean Avenue</h5> 
-                              </div>
-                              <div class="d-flex gap-5">
-                                <p>287.350.179</p>
-                                <p>3:18</p>
-                              </div>
-                          </li>
-                          <li class="d-flex justify-content-between align-items-center">
-                            <div class="d-flex align-items-center gap-3">
-                              <span>4</span>
-                             <img src="./assets/imgs/main/image-12.jpg" alt="artistTrack" width="35" height="35">
-                             <h5>Ocean Avenue</h5> 
-                            </div>
-                            <div class="d-flex gap-5">
-                              <p>287.350.179</p>
-                              <p>3:18</p>
-                            </div>
-                        </li>
-                        <li class="d-flex justify-content-between align-items-center">
-                          <div class="d-flex align-items-center gap-3">
-                           <span>5</span>
-                           <img src="./assets/imgs/main/image-12.jpg" alt="artistTrack" width="35" height="35">
-                           <h5>Ocean Avenue</h5> 
-                          </div>
-                          <div class="d-flex gap-5">
-                            <p>287.350.179</p>
-                            <p>3:18</p>
-                          </div>
-                        </li>
-                      </ol>
-                      <a href="#" class="text-white-50 text-decoration-none d-none d-xl-flex" id="moreSongs">
-                        <h5>VISUALIZZA ALTRO</h5>
-                      </a>
-                        </div>
-                        
+                        </div>   
+
                         <div class="col-12 col-xl-5">
                           <h3 class="text-light">Brani che ti piacciono</h3>
-                          <div class="d-flex justify-content-start align-items-center mb-3">
-                           <img src="./assets/imgs/main/image-11.jpg" class="rounded-circle me-2" width="60" height="60">
-                           <p class="text-light"><span class="text-light fw-bold">Hai messo Mi piace a 11 brani</span><br>di Imagine Dragons</p>
+                          <div id="favoriteArtistSongs"class="d-flex justify-content-start align-items-center mb-3">
+                           <!--<img src="./assets/imgs/main/image-11.jpg" class="rounded-circle me-2" width="60" height="60">
+                           <p class="text-light"><span class="text-light fw-bold">Hai messo Mi piace a 11 brani</span><br>di Imagine Dragons</p>-->
                           </div>    
                         </div> 
+                        <a href="#" class="text-white-50 text-decoration-none d-none d-xl-flex" id="moreSongs">
+                          <h5>VISUALIZZA ALTRO</h5>
+                        </a>
                     </div>
 
                    </div>
@@ -809,5 +739,6 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script src="./assets/js/artist-page-script.js"></script>
   </body>
 </html>
