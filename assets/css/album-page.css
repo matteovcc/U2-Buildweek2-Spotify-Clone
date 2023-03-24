@@ -41,7 +41,7 @@ body {
 
 #main-container {
   background: rgb(24, 21, 21);
-  background: linear-gradient(to bottom, rgb(206, 180, 67),rgb(32, 28, 28) 410px);
+  background: linear-gradient(to bottom, rgb(206, 180, 67), rgb(32, 28, 28) 410px);
   background-attachment: local;
   max-height: 90vh;
   overflow: auto;
@@ -65,6 +65,7 @@ svg:hover {
 
 #play {
   background: white;
+  aspect-ratio: 1/1;
 }
 
 a {
@@ -96,14 +97,14 @@ a {
 }
 
 footer {
-  background-color: #535353;
+  background-color: rgb(32, 28, 28);
 }
 
-.green-title{
-  color:rgb(43, 185, 43)
+.green-title {
+  color: rgb(43, 185, 43);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   #friends,
   #comments,
   #user-playlists,
@@ -118,8 +119,7 @@ footer {
   #playbackBar .playback-bar,
   #playback-progressbar,
   input,
-  #time
-  {
+  #time {
     display: none;
   }
 
@@ -139,6 +139,8 @@ footer {
     bottom: 93px;
     border-radius: 10px;
     justify-content: space-between;
+    background-color: rgb(63, 63, 63);
+    margin-left: 3%;
   }
 
   #navbar-menu {
