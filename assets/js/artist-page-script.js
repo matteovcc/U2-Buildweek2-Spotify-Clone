@@ -1,9 +1,10 @@
 const urlParams = new URLSearchParams(window.location.search)
-const artistId = urlParams.get("artistId")
+const id = urlParams.get("id")
+const endpoint = id ? "https://striveschool-api.herokuapp.com/api/deezer/artist/" + id : "https://striveschool-api.herokuapp.com/api/deezer/artist/412"
 
-fetch("https://striveschool-api.herokuapp.com/api/deezer/artist/412")
-.then((response) => response.json())
-.then((artistData) => {
+fetch(endpoint)
+.then(response => response.json())
+.then(artistData => {
     displayArtist(artistData)
     artistPopularSongs(artistData)
     console.log(artistData)
@@ -33,7 +34,7 @@ function displayArtist(artistData) {
 }
 
 function artistPopularSongs(artistData){
-    fetch("https://striveschool-api.herokuapp.com/api/deezer/artist/412/top?limit=50")
+    fetch(endpoint + "/top?limit=50")
     .then((response) => response.json())
     .then((popularSongs) => {
         const songsContainer = document.getElementById("popularArtistSongs")
