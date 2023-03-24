@@ -48,7 +48,7 @@ function displayAlbum(albumData) {
     
     <div class="col-12 mx-0 col-md-7 ms-4 px-4">
                     <p class="text-white mb-0 fw-semibold">${track.title}</p>
-                    <p class="text-secondary fw-semibold">${albumData.artist.name}</p>
+                    <a href="artist-page.html?id=${albumData.artist.id}"><p class="text-secondary fw-semibold">${albumData.artist.name}</p></a>
                   </div>
 
                   <div class="d-none d-md-flex col-md-5 justify-content-between">
