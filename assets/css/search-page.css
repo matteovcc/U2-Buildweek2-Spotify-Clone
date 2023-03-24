@@ -245,7 +245,7 @@ h5 {
 
   #card {
     aspect-ratio: 1 / 1;
-    width: calc(90% / 8);
+    width: calc(94% / 8);
     overflow: hidden;
   }
 }
