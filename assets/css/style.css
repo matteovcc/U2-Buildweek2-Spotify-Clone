@@ -6,7 +6,7 @@ body {
 }
 
 #main-container {
-  background-color: #535353;
+  background-color: #121212;
   max-height: 90vh;
   overflow: auto;
 }
@@ -21,6 +21,7 @@ svg:hover {
 
 #play {
   background: white;
+  aspect-ratio: 1/1;
 }
 
 #play svg {
@@ -43,9 +44,6 @@ svg:hover {
   background: #969494;
 }
 
-footer {
-  background-color: #535353;
-}
 
 .social {
   display: flex;
@@ -79,6 +77,10 @@ a {
   fill: rgb(29, 186, 29);
 }
 
+#player{
+background-color: rgb(63, 63, 63);
+}
+
 @media screen and (max-width: 991px) {
   #friends,
   #comments,
@@ -109,18 +111,14 @@ a {
     width: 50px;
   }
 
-  #main-container {
-    background-color: #121212;
-  }
-
   #player {
     position: fixed;
-    width: 96%;
-    margin-inline: 10px;
+    width: 94%;
     bottom: 93px;
     justify-content: space-between;
-    background-color: rgb(48, 161, 48);
     border-radius: 10px;
+    background-color: rgb(63, 63, 63);
+    margin-left: 3%;
   }
 
   #navbar-menu {
@@ -179,11 +177,17 @@ a {
     fill: rgb(29, 186, 29);
   }
   #container-navbar {
+    z-index: 5;
     position: fixed;
     bottom: 0;
     padding: 0;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
-  }
+    background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 1) 35%,
+      rgba(0, 0, 0, 0.8) 80%,
+      rgba(0, 0, 0, 0) 100%
+    );
 
   ::-webkit-scrollbar {
     display: none;
@@ -202,15 +206,17 @@ a {
   }
 }
 
-@media screen and (min-width:768px) and (max-width:991px){
- 
- 
-  .divider{
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .divider {
     display: flex;
     justify-content: end;
     align-items: baseline;
-    
+  }
+}
+
+@media screen and (min-width:992px){
+  footer {
+    background-color: #121212;
   }
   
-
 }
