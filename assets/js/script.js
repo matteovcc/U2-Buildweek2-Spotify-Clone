@@ -1,6 +1,13 @@
 const endPoint = "https://striveschool-api.herokuapp.com/api/deezer/album/390984";
 const urlParams = new URLSearchParams(window.location.search);
 const albumId = urlParams.get("albumId");
+const user = document.getElementById("profile");
+const nomeUtente = localStorage.getItem("username");
+
+if (nomeUtente) {
+  user.innerHTML = "";
+  user.innerHTML = `<button class="bg-dark border border-dark rounded d-flex align-items-center"><img width="20px" class="rounded-circle" src="assets/images/epicode.jfif" alt=""><span id="nomeUtente" class="text-white ms-2">${nomeUtente}</span></button>`;
+}
 
 fetch(endPoint)
   .then(response => response.json())
@@ -36,14 +43,3 @@ function track(trackData) {
   </div>
 `;
 }
-
-// document.addEventListener("DOMContentLoaded", function hide() {
-//   const mainTrack = document.getElementById("mainTrack");
-//   const hideBtn = document.getElementById("btn-hide");
-
-//   hideBtn.addEventListener("click", event => {
-//     event.preventDefault();
-//     mainTrack.classList.add("d-none");
-//   });
-// });
-// onclick="hide()"
