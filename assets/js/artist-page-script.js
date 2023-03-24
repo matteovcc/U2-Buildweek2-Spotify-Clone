@@ -44,6 +44,9 @@ function artistPopularSongs(artistData){
         songsContainer.appendChild(popularSongsList)
         let index = 1
         popularSongs.data.forEach(song => {
+          const minutes = Math.floor(song.duration / 60);
+          const seconds = Math.floor(song.duration % 60);
+          const durationString = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
             const songArtist = document.createElement("li")
             songArtist.style.display = "flex"
             songArtist.style.justifyContent = "space-between"
@@ -55,7 +58,7 @@ function artistPopularSongs(artistData){
            </div>
            <div class="d-flex gap-5">
              <p class=text-light>${song.rank}</p>
-             <p class=text-light>${song.duration}</p>
+             <p class=text-light>${durationString}</p>
            </div>`
            popularSongsList.appendChild(songArtist)
            index++
@@ -75,6 +78,7 @@ function artistPopularSongs(artistData){
            const playBtn = document.getElementById("play");
            playBtn.addEventListener("click", () => {
             playTrack()
+            playBtn.innerHTML = `<span class="text-center text-dark fw-bold d-flex rounded-circle">| |</span>`
            })
            function playTrack(trackUrl) {
             const audioPlayer = document.getElementById("audio-player")
@@ -107,11 +111,11 @@ function displayArtistAlbum(artistData){
 
   artistAlbums.data.forEach(album => {
     artistAlbumList.innerHTML += `<div class="col-3">
-    <a href="album-page.html?id=${album.album.id}"><div class="card bg-dark p-2">
-      <img src="${album.album.cover_big}" class="card-img-top" alt="..." />
+    <a href="album-page.html?id=${album.album.id}"><div class="card bg-dark p-2" style="height:340px;">
+      <img src="${album.album.cover_big}" class="card-img-top" alt="..."/>
       <div class="card-body">
         <p class="card-text text-white">${album.album.title}</p>
-        <p class="text-secondary fw-semibold">2010</p>
+        
       </div>
     </div>
     </a>
