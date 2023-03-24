@@ -41,6 +41,9 @@ function displayAlbum(albumData) {
   tracks.innerHTML = "";
 
   albumData.tracks.data.forEach(track => {
+      const minutes = Math.floor(track.duration / 60);
+          const seconds = Math.floor(track.duration % 60);
+          const durationString = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
     const trackAlbum = document.createElement("li");
     // trackAlbum.innerHTML = `<div class="ms-3"><p class="mb-0">${track.title}</p><p class="text-secondary fw-semibold">${albumData.artist.name}</p></div>`;
     trackAlbum.innerHTML = `
@@ -53,7 +56,7 @@ function displayAlbum(albumData) {
 
                   <div class="d-none d-md-flex col-md-5 justify-content-between">
                     <p class="text-secondary fw-semibold">${track.rank}</p>
-                    <p class="text-secondary fw-semibold ">${track.duration}</p>
+                    <p class="text-secondary fw-semibold ">${durationString}</p>
                   </div>
      </div>             
                   `;
