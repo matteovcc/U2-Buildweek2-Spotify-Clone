@@ -43,6 +43,7 @@ function artistPopularSongs(artistData) {
       console.log(popularSongs);
       const songsContainer = document.getElementById("popularArtistSongs");
       const popularSongsList = document.createElement("ol");
+      popularSongsList.style.paddingInlineStart = 0
       songsContainer.appendChild(popularSongsList);
       let index = 1;
       popularSongs.data.forEach(song => {
@@ -53,6 +54,7 @@ function artistPopularSongs(artistData) {
         songArtist.style.display = "flex";
         songArtist.style.justifyContent = "space-between";
         songArtist.style.alignItems = "center";
+        songArtist.style.paddingBlock = "0.4rem"
         songArtist.innerHTML = `<div class="d-flex align-items-center gap-3">
             <span class="text-light">${index}</span> 
             <a href="album-page.html?id=${song.album.id}"><img src="${song.album.cover_small}" alt="artistTrack" width="35" height="35"></a>
