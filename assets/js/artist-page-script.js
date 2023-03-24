@@ -48,7 +48,7 @@ function artistPopularSongs(artistData){
             songArtist.style.alignItems = "center"
             songArtist.innerHTML = `<div class="d-flex align-items-center gap-3">
             <span class="text-light">${index}</span> 
-            <img src="${song.album.cover_small}" alt="artistTrack" width="35" height="35">
+            <a href="album-page.html?id=${song.album.id}"><img src="${song.album.cover_small}" alt="artistTrack" width="35" height="35"></a>
             <p class=text-light fw-bold >${song.title}</p> 
            </div>
            <div class="d-flex gap-5">
@@ -85,8 +85,8 @@ function artistPopularSongs(artistData){
         info.style.display = "flex"
         info.style.justifyContent = "start"
         info.style.alignItems = "center"
-        info.innerHTML = `<img src=${artistData.picture_small} class="rounded-circle me-2" width="60" height="60">
-        <p class="text-light"><span class="text-light fw-bold">Hai messo Mi piace a 11 brani</span><br>di ${artistData.name}</p>`
+        info.innerHTML = `<a href="artist-page.html?id=${artistData.id}"><img src=${artistData.picture_small} class="rounded-circle me-2" width="60" height="60"></a>
+        <p class="text-light"><span class="text-light fw-bold">Hai messo Mi piace a 11 brani</span><br>di <a href="artist-page.html?id=${artistData.id}">${artistData.name}</a></p>`
         favoriteSongs.appendChild(info)
     })
 }
