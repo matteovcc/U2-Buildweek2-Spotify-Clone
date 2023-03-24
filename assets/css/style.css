@@ -71,7 +71,7 @@ a {
   background: linear-gradient(49deg, rgba(0, 0, 0, 1) 56%, rgb(55, 53, 53) 88%);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   #friends,
   #comments,
   #user-playlists,
@@ -104,12 +104,7 @@ a {
   #main-container {
     background-color: #121212;
   }
-  #container-navbar {
-    position: fixed;
-    bottom: 0;
-    padding: 0;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
-  }
+
   #player {
     position: fixed;
     width: 96%;
@@ -176,9 +171,13 @@ a {
   #heart-mobile {
     fill: rgb(29, 186, 29);
   }
-}
+  #container-navbar {
+    position: fixed;
+    bottom: 0;
+    padding: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  }
 
-@media screen and (max-width: 991px) {
   ::-webkit-scrollbar {
     display: none;
   }
@@ -192,36 +191,6 @@ a {
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  #container-navbar {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  ::-webkit-scrollbar {
-    display: none;
-  }
-
-  ::-webkit-scrollbar-track {
-    display: none;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    display: none;
-  }
-
-  ::-webkit-scrollbar-thumb:hover {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  #container-navbar {
     display: none;
   }
 }
