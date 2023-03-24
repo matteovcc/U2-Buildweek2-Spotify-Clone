@@ -83,6 +83,7 @@ svg:hover {
 
 #play {
   background: white;
+  aspect-ratio: 1/1;
 }
 
 a {
@@ -130,6 +131,10 @@ h5 {
   overflow: hidden;
 }
 
+#player{
+background-color: rgb(63, 63, 63);
+}
+
 @media screen and (max-width: 991px) {
   #friends,
   #comments,
@@ -169,11 +174,11 @@ h5 {
   #player {
     position: fixed;
     width: 94%;
-    margin-inline: auto;
     bottom: 88px;
     border-radius: 10px;
-    border: 1px solid white;
     justify-content: space-between;
+    background-color: rgb(63, 63, 63);
+    margin-left: 3%;
   }
 
   #navbar-menu {
@@ -220,6 +225,8 @@ h5 {
   }
   #card {
     width: calc(85% / 2);
+  }
+  
   }
 }
 
