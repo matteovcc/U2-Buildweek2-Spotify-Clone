@@ -56,11 +56,11 @@ function artistPopularSongs(artistData) {
         songArtist.innerHTML = `<div class="d-flex align-items-center gap-3">
             <span class="text-light">${index}</span> 
             <a href="album-page.html?id=${song.album.id}"><img src="${song.album.cover_small}" alt="artistTrack" width="35" height="35"></a>
-            <p class=text-light fw-bold >${song.title}</p> 
+            <p class="text-light fw-bold my-auto">${song.title}</p> 
            </div>
            <div class="d-flex gap-5">
-             <p class=text-light>${song.rank}</p>
-             <p class=text-light>${durationString}</p>
+             <p class="text-light my-auto">${song.rank}</p>
+             <p class="text-light my-auto">${durationString}</p>
            </div>`;
         popularSongsList.appendChild(songArtist);
         index++;
