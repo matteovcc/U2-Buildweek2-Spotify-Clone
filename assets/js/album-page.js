@@ -81,7 +81,7 @@ function displayAlbum(albumData) {
           id="play-button"
           aria-label="Play"
           data-encore-id="buttonPrimary"
-          class="Button-sc-qlcn5g-0 eHhJDl btn btn-success rounded-5 p-1"
+          class="Button-sc-qlcn5g-0 eHhJDl btn btn-success rounded-5 py-1 px-0"
         >
           <span
             class="ButtonInner-sc-14ud5tc-0 dpREpp encore-bright-accent-set"
@@ -110,7 +110,7 @@ function displayAlbum(albumData) {
         } else {
           audioPlayer.src = trackUrl;
           audioPlayer.play();
-          playButton.innerHTML = '<span class="d-flex justify-content-center vertical-align-middle p-2 fw-bold fs-5">| |</span>';
+          playButton.innerHTML = '<span class="d-flex justify-content-center vertical-align-middle py-1 px-2 fw-bold fs-5">| |</span>';
           currentTrackTimeout = setTimeout(highlightCurrentTrack, 500);
         }
         isPlaying = !isPlaying;
