@@ -72,6 +72,12 @@ function displayAlbum(albumData) {
 
     trackList.appendChild(trackAlbum);
 
+    
+           const playBtn = document.getElementById("play");
+           playBtn.addEventListener("click", () => {
+            playTrack()
+           })
+
     function playTrack(trackUrl) {
       const audioPlayer = document.getElementById("audio-player");
       const playButton = document.getElementById("play-button");
