@@ -36,11 +36,11 @@ svg:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #535353;
+  background: #969494;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #969494;
 }
 
 footer {
@@ -68,7 +68,15 @@ a {
 
 #mainTrack {
   background: rgb(0, 0, 0);
-  background: linear-gradient(49deg, rgba(0, 0, 0, 1) 56%, rgb(55, 53, 53) 88%);
+  background: linear-gradient(40deg, rgba(0, 0, 0, 1) 16%, rgb(55, 53, 53) 88%);
+}
+
+.mobile-play-btn {
+  background-color: #121212;
+  border-radius: 50px;
+}
+#heart-mobile {
+  fill: rgb(29, 186, 29);
 }
 
 @media screen and (max-width: 991px) {
@@ -166,7 +174,6 @@ a {
   .mobile-play-btn {
     background-color: #121212;
     border-radius: 50px;
-    text-align: center;
   }
   #heart-mobile {
     fill: rgb(29, 186, 29);
@@ -193,4 +200,17 @@ a {
   ::-webkit-scrollbar-thumb:hover {
     display: none;
   }
+}
+
+@media screen and (min-width:768px) and (max-width:991px){
+ 
+ 
+  .divider{
+    display: flex;
+    justify-content: end;
+    align-items: baseline;
+    
+  }
+  
+
 }
