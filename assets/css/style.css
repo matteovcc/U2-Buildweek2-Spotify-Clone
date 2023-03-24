@@ -170,3 +170,27 @@ a {
     fill: rgb(29, 186, 29);
   }
 }
+
+@media screen and (max-width: 991px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  ::-webkit-scrollbar-track {
+    display: none;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    display: none;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #container-navbar {
+    display: none;
+  }
+}
