@@ -33,7 +33,6 @@ function saveCredentials(event) {
     (username === correctUsername || username === correctEmail) &&
     passwordInput.value === correctPassword
   ) {
-    localStorage.setItem("username", username);
     localStorage.setItem("password", password);
   }
 }
@@ -44,6 +43,7 @@ function checkCredentials(event) {
   event.preventDefault();
   const username = document.getElementById("inputEmail").value;
   if ((username === correctUsername || username === correctEmail) && passwordInput.value === correctPassword) {
+    localStorage.setItem("username", username);
     window.location.href = "index.html";
   } else {
     alert("Nome utente o password errati!");
