@@ -54,6 +54,16 @@ a {
   text-decoration: none;
 }
 
+#playlistCard {
+  width: calc(96% / 3);
+  overflow: hidden;
+}
+
+#mainTrack {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(49deg, rgba(0, 0, 0, 1) 56%, rgb(55, 53, 53) 88%);
+}
+
 @media screen and (max-width: 767px) {
   #friends,
   #comments,
