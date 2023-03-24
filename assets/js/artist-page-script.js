@@ -7,6 +7,7 @@ fetch(endpoint)
 .then(artistData => {
     displayArtist(artistData)
     artistPopularSongs(artistData)
+    displayArtistAlbum(artistData)
     console.log(artistData)
 })
 .catch((error) => {
@@ -37,6 +38,7 @@ function artistPopularSongs(artistData){
     fetch(endpoint + "/top?limit=50")
     .then((response) => response.json())
     .then((popularSongs) => {
+        console.log(popularSongs)
         const songsContainer = document.getElementById("popularArtistSongs")
         const popularSongsList = document.createElement("ol")
         songsContainer.appendChild(popularSongsList)
@@ -88,5 +90,32 @@ function artistPopularSongs(artistData){
         info.innerHTML = `<a href="artist-page.html?id=${artistData.id}"><img src=${artistData.picture_small} class="rounded-circle me-2" width="60" height="60"></a>
         <p class="text-light"><span class="text-light fw-bold">Hai messo Mi piace a 11 brani</span><br>di <a href="artist-page.html?id=${artistData.id}">${artistData.name}</a></p>`
         favoriteSongs.appendChild(info)
+    })
+}
+
+function displayArtistAlbum(artistData){
+  fetch(endpoint + "/top?limit=50")
+    .then((response) => response.json())
+    .then((artistAlbums) => {
+  const artistAlbumList = document.getElementById("artistAlbumList")
+  artistAlbumList.innerHTML = `<div class="col-12 d-flex justify-content-between">
+  <h3 class="text-white">Altro di ${artistData.name}</h3>
+  <a href="">
+    <p class="text-secondary fw-semibold">Vedi discografia</p>
+  </a>
+  </div>`
+
+  artistAlbums.data.forEach(album => {
+    artistAlbumList.innerHTML += `<div class="col-3">
+    <a href="album-page.html?id=${album.album.id}"><div class="card bg-dark p-2">
+      <img src="${album.album.cover_big}" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <p class="card-text text-white">${album.album.title}</p>
+        <p class="text-secondary fw-semibold">2010</p>
+      </div>
+    </div>
+    </a>
+  </div>`
+  })
     })
 }
