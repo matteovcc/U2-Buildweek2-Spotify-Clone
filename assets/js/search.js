@@ -39,7 +39,7 @@ function search(data) {
     newDiv.className = "row justify-content-xl-center mb-3 g-1";
     newDiv.innerHTML = `
   <div class="col-4">
-    <img src="${element.album.cover_xl}" class="img-fluid img-overlay" alt="${element.title}">
+  <a href="album-page.html?id=${element.album.id}"><img src="${element.album.cover_xl}" class="img-fluid img-overlay" alt="${element.title}"></a>
   </div>
   <div class="col-8 px-3 px-xl-5 d-flex flex-column justify-content-center">
     <div class="d-flex justify-content-between mt-1">
@@ -49,7 +49,7 @@ function search(data) {
       <h2 class="text-white">${element.title}</h2>
     </div>
     <div id="author" class="mt-1">
-      <p class="text-white mb-1">${element.artist.name}</p>
+    <a href="artist-page.html?id=${element.artist.id}"><p class="text-white mb-1">${element.artist.name}</p></a>
     </div>
     <div id="btn-container" class=" d-flex align-items-center">
       <button class="bg-success text-dark border-0 rounded-pill fw-semibold py-1 px-2 px-xl-4 me-2" id="play-btn">Play</button>

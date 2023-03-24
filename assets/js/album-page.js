@@ -1,22 +1,23 @@
 const urlParams = new URLSearchParams(window.location.search);
-const albumId = urlParams.get("albumId");
+const albumId = urlParams.get("id");
+const link = "https://striveschool-api.herokuapp.com/api/deezer/album/";
+const endpoint = albumId ? link + albumId : link;
 
 let currentTrackIndex = 0;
 let isPlaying = false;
 let currentTrackTimeout = null;
 
-
-
-fetch("https://striveschool-api.herokuapp.com/api/deezer/album/75621062")
-  .then((response) => response.json())
-  .then((albumData) => {
-    displayAlbum(albumData);
-    console.log(albumData);
-  })
-  .catch((error) => {
-    console.error(error);
-  });
-
+window.onload = () => {
+  fetch(endpoint)
+    .then(response => response.json())
+    .then(albumData => {
+      displayAlbum(albumData);
+      console.log(albumData);
+    })
+    .catch(error => {
+      console.error(error);
+    });
+};
 function displayAlbum(albumData) {
   const albumTitle = document.getElementById("album-title");
   const albumArtist = document.getElementById("artist-name");
@@ -39,7 +40,7 @@ function displayAlbum(albumData) {
   let tracks = document.getElementById("tracks");
   tracks.innerHTML = "";
 
-  albumData.tracks.data.forEach((track) => {
+  albumData.tracks.data.forEach(track => {
     const trackAlbum = document.createElement("li");
     // trackAlbum.innerHTML = `<div class="ms-3"><p class="mb-0">${track.title}</p><p class="text-secondary fw-semibold">${albumData.artist.name}</p></div>`;
     trackAlbum.innerHTML = `
@@ -62,22 +63,21 @@ function displayAlbum(albumData) {
       const playerImg = document.getElementById("song-img");
       const songArtist = document.getElementById("song-artist");
       const songTitle = document.getElementById("song-title");
-    //   const playButton = document.getElementById("play");
+      //   const playButton = document.getElementById("play");
 
       playerImg.src = albumData.cover_small;
       songTitle.innerText = track.title;
       songArtist.innerText = albumData.artist.name;
-
     });
 
     trackList.appendChild(trackAlbum);
 
     function playTrack(trackUrl) {
-        const audioPlayer = document.getElementById("audio-player");
-        const playButton = document.getElementById("play-button");
-        if (isPlaying) {
-          audioPlayer.pause();
-          playButton.innerHTML = `<button
+      const audioPlayer = document.getElementById("audio-player");
+      const playButton = document.getElementById("play-button");
+      if (isPlaying) {
+        audioPlayer.pause();
+        playButton.innerHTML = `<button
           id="play-button"
           aria-label="Play"
           data-encore-id="buttonPrimary"
@@ -106,29 +106,28 @@ function displayAlbum(albumData) {
             </span>
           </span>
         </button>`;
-          clearTimeout(currentTrackTimeout);
-        } else {
-          audioPlayer.src = trackUrl;
-          audioPlayer.play();
-          playButton.innerHTML = '<span class="d-flex justify-content-center vertical-align-middle py-1 px-2 fw-bold fs-5">| |</span>';
-          currentTrackTimeout = setTimeout(highlightCurrentTrack, 500);
-        }
-        isPlaying = !isPlaying;
+        clearTimeout(currentTrackTimeout);
+      } else {
+        audioPlayer.src = trackUrl;
+        audioPlayer.play();
+        playButton.innerHTML =
+          '<span class="d-flex justify-content-center vertical-align-middle py-1 px-2 fw-bold fs-5">| |</span>';
+        currentTrackTimeout = setTimeout(highlightCurrentTrack, 500);
       }
-      
-    
+      isPlaying = !isPlaying;
+    }
   });
   document.getElementById("play-button").addEventListener("click", () => {
     playTrack(albumData.tracks.data[currentTrackIndex].preview);
   });
-  
+
   function playTrack(trackUrl) {
     const audioPlayer = document.getElementById("audio-player");
     audioPlayer.src = trackUrl;
     audioPlayer.play();
     highlightCurrentTrack();
   }
-  
+
   function highlightCurrentTrack() {
     const trackAlbums = document.querySelectorAll("#list-track li p");
     trackAlbums.forEach((trackAlbum, index) => {
@@ -139,8 +138,6 @@ function displayAlbum(albumData) {
       }
     });
   }
-  
-  highlightCurrentTrack();
-  
-}
 
+  highlightCurrentTrack();
+}
