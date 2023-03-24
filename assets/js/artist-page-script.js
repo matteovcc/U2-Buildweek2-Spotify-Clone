@@ -21,7 +21,7 @@ function displayArtist(artistData) {
   artistCover.style.backgroundImage = "url('" + artistData.picture_xl + "')";
   artistCover.style.backgroundPosition = "top";
   artistCover.style.backgroundSize = "cover";
-  artistPage.innerHTML += `<div class="container-fluid mt-5 ms-2">
+  artistPage.innerHTML += `<div class="container-fluid mt-5">
     <div class="row g-1">
       <div class="col-6">
         <div class="d-flex">
