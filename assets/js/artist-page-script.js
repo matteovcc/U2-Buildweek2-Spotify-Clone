@@ -21,7 +21,7 @@ function displayArtist(artistData) {
   artistCover.style.backgroundImage = "url('" + artistData.picture_xl + "')";
   artistCover.style.backgroundPosition = "top";
   artistCover.style.backgroundSize = "cover";
-  artistPage.innerHTML += `<div class="container-fluid mt-5 ms-2">
+  artistPage.innerHTML += `<div class="container-fluid mt-5">
     <div class="row g-1">
       <div class="col-6">
         <div class="d-flex">
@@ -56,11 +56,11 @@ function artistPopularSongs(artistData) {
         songArtist.innerHTML = `<div class="d-flex align-items-center gap-3">
             <span class="text-light">${index}</span> 
             <a href="album-page.html?id=${song.album.id}"><img src="${song.album.cover_small}" alt="artistTrack" width="35" height="35"></a>
-            <p class=text-light fw-bold >${song.title}</p> 
+            <p class="text-light fw-bold my-auto">${song.title}</p> 
            </div>
            <div class="d-flex gap-5">
-             <p class=text-light>${song.rank}</p>
-             <p class=text-light>${durationString}</p>
+             <p class="text-light my-auto">${song.rank}</p>
+             <p class="text-light my-auto">${durationString}</p>
            </div>`;
         popularSongsList.appendChild(songArtist);
         index++;
@@ -79,7 +79,7 @@ function artistPopularSongs(artistData) {
         const playBtn = document.getElementById("play");
         playBtn.addEventListener("click", () => {
           playTrack();
-          playBtn.innerHTML = `<span class="text-center text-dark fw-bold d-flex rounded-circle"><i class="bi bi-pause"></i></span>`;
+          playBtn.innerHTML = `<span class="text-center text-dark fw-bold d-flex rounded-circle"><svg role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 16 16" data-encore-id="icon" class="Svg-sc-ytk21e-0 gQUQL"><path d="M2.7 1a.7.7 0 0 0-.7.7v12.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V1.7a.7.7 0 0 0-.7-.7H2.7zm8 0a.7.7 0 0 0-.7.7v12.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V1.7a.7.7 0 0 0-.7-.7h-2.6z"></path></svg></span>`;
         });
         function playTrack(trackUrl) {
           const audioPlayer = document.getElementById("audio-player");
