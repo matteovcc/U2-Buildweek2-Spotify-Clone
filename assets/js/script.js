@@ -20,7 +20,7 @@ fetch(endPoint)
 
 function track(trackData) {
   const mainTrack = document.getElementById("mainTrack");
-  mainTrack.innerHTML = `<div id="mainTrack" class="row g-1">
+  mainTrack.innerHTML = `<a href="album-page.html?id=${trackData.id}"><div id="mainTrack" class="row g-1">
   <div class="col-4">
     <img src="${trackData.artist.picture_xl}" class="img-fluid" alt="${trackData.title}">
   </div>
@@ -41,5 +41,7 @@ function track(trackData) {
       <button class="bg-transparent border-0 text-white fs-1" id="info">...</button>
     </div>
   </div>
+  </div>
+  </a>
 `;
 }
