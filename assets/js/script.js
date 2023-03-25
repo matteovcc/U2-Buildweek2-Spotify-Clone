@@ -1,4 +1,4 @@
-const endPoint = "https://striveschool-api.herokuapp.com/api/deezer/album/390984";
+const endPoint = "https://striveschool-api.herokuapp.com/api/deezer/album/" + Math.floor(Math.random() * 300000);;
 const urlParams = new URLSearchParams(window.location.search);
 const albumId = urlParams.get("albumId");
 const user = document.getElementById("profile");
